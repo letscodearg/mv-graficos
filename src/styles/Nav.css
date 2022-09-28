@@ -1,0 +1,29 @@
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #DF001F;
+    color: snow;
+    padding-top: 5em;
+}
+
+.menuItem {
+    text-decoration: none;
+    color: snow;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.menuItem:hover {
+    background-color: #DF001F;
+}
+
+.showMenu {
+    transform: translateY(0);
+  }

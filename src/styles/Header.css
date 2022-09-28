@@ -1,0 +1,33 @@
+@import './Flexbox.css';
+
+header #logo img{
+    width: 60%
+}
+
+header #desktop {
+    display: none
+}
+
+#mobile {
+    width: 90%
+}
+
+.hamburger {
+    z-index: 100;
+    padding: 4px;
+    border: #DF001F solid 1px;
+    background: snow;
+    cursor: pointer;
+    width: 20%;
+}
+
+.open {
+    color: #DF001F;
+    font-size: 1rem;
+}
+
+.close {
+    display: none;
+    color: #DF001F;
+    font-size: 1rem;
+}
