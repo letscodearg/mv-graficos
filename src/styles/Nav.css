@@ -9,6 +9,11 @@
     background: #DF001F;
     color: snow;
     padding-top: 5em;
+    width: 100%;
+}
+
+.notShowMenu {
+    display: none;
 }
 
 .menuItem {
@@ -27,3 +32,30 @@
 .showMenu {
     transform: translateY(0);
   }
+
+
+  @media screen and (min-width: 1200px) {
+    .menu {
+        position: relative;
+        z-index: 99;
+        background: snow;
+        color: #DF001F;
+        padding-top: 0;
+        width: auto;
+    }
+
+    .menuItem {
+        color: #DF001F;
+        padding: .5rem;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        width: auto;
+    }
+
+    .menuItem:hover {
+        background-color: #DF001F;
+        color: snow;
+        padding: .5rem;
+        border-radius: .5rem;
+    }
+}

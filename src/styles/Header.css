@@ -9,7 +9,7 @@ header #desktop {
 }
 
 #mobile {
-    width: 90%
+    width: 90%;
 }
 
 .hamburger {
@@ -27,7 +27,20 @@ header #desktop {
 }
 
 .close {
-    display: none;
     color: #DF001F;
     font-size: 1rem;
+}
+
+.logo {
+    margin-top:1rem;
+}
+
+@media screen and (min-width: 1200px) {
+    #mobile {
+        display: none
+    } 
+
+    header #desktop {
+        display: flex;
+    } 
 }

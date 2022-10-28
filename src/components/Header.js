@@ -1,36 +1,28 @@
+import { useState } from 'react';
 import logo from '../assets/logo.png';
 import Nav from './Nav';
 import {Link} from 'react-router-dom'
 import '../styles/Header.css';
 
 function Header() {
-
-    const menu = document.querySelector(".menu");
-    const closeIcon= document.querySelector(".close");
-    const menuIcon = document.querySelector(".open");
     
+    const [menu, setMenu] = useState(true)
     function toggleMenu() {
-      if (menu.classList.contains("showMenu")) {
-        menu.classList.remove("showMenu");
-        closeIcon.style.display = "none";
-        menuIcon.style.display = "block";
-      } else {
-        menu.classList.add("showMenu");
-        closeIcon.style.display = "block";
-        menuIcon.style.display = "none";
-      }
+        if (menu === false ) {
+            setMenu(true)
+        } else {
+            setMenu(false)
+        }
     }
-
 
   return (
     <header>
         <section id="mobile" className="df rw wp jca aic">
-            <Link to='/' id="logo">
+            <Link to='/' id="logo" className="logo df jcc">
                 <img src={logo}  alt="logo" />
             </Link>
             <button className="hamburger" onClick={toggleMenu} >
-                <i className="fas fa-times close" ></i>
-                <i className="fas fa-bars cl-dorado bg-rosa open"></i>
+                <i className={menu === true ? "fas fa-bars open" : "fas fa-times close"} ></i>
             </button>
             <Nav links={
                 [
@@ -41,11 +33,12 @@ function Header() {
                     {url: "/clientes", title: "Nuestros Clientes"},
                     {url: "/contacto", title: "Contacto"}
                 ]
-                }/>
+                } 
+                className={menu} />
         </section>
-        <section id="desktop">
+        <section id="desktop" className="df rw wp jca aic">
             <Link to='/' id="logo">
-                <img src={logo}  alt="logo" />
+                <img src={logo}  alt="logo" className="logo df jcc"/>
             </Link>
             <Nav links={
                 [
@@ -55,7 +48,8 @@ function Header() {
                     {url: "/calidad", title: "Gestión de Calidad"},
                     {url: "/clientes", title: "Nuestros Clientes"},
                     {url: "/contacto", title: "Contacto"}
-                ]}/>
+                ]} 
+                className={menu===false} />
         </section>
     </header>
   );
