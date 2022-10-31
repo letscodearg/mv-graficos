@@ -3,6 +3,7 @@ import logo from '../assets/logo.png';
 import Nav from './Nav';
 import {Link} from 'react-router-dom'
 import '../styles/Header.css';
+import '../styles/Body.css';
 
 function Header() {
     

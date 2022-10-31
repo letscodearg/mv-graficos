@@ -1,13 +1,17 @@
 /* import './App.css'; */
-import Header from './components/Header';
-import Footer from './components/Footer';
+import {Routes,Route} from 'react-router-dom';
+import Layout from './components/Layout';
+import About from './components/About';
+import Products from './components/Products';
 
 function App() {
   return (
-    <div >
-      <Header/> 
-      <Footer/>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout/>}>
+        <Route path="nosotros" exact="true" element={<About/>} />
+        <Route path="lineas" exact="true" element={<Products/>} />
+      </Route>
+    </Routes>
   );
 }
 
