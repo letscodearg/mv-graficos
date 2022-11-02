@@ -1,0 +1,81 @@
+main .main p{
+    padding: 0 2rem 0 2rem;
+    text-align: justify;
+}
+
+main form {
+    font-weight: bold;
+    width: 100vw;
+
+}
+
+main form label {
+    margin-right: 1rem;
+    width: 20%
+}
+
+main form fieldset {
+    border: none;
+    width: 80%
+}
+
+main form input, main form textarea {
+    width: 80%
+}
+
+main form button {
+   border-radius: 2rem;
+   background-color: #DF001F;
+   color: snow;
+   padding: .8rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+
+main form fieldset input, main form fieldset textarea {
+    border: none;
+    border-bottom: solid red .2rem
+}
+
+main .link {
+    text-decoration: none;
+    color: snow;
+    margin-left: 1rem;
+}
+
+.fa-linkedin {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        border-top: #DF001F solid .3rem;
+        margin-top: 2rem;
+    }
+
+    main form {
+        width: 60%;
+        margin-top: 1rem;
+    }
+
+    main section {
+        width: 100%;
+    }
+
+    main form {
+        margin-top: 3rem;
+    }
+
+    main form fieldset input, main form fieldset textarea {
+        margin-bottom: 2rem;
+        outline: none;
+    }
+
+    main form button:hover {
+        background-color: grey;
+        color: snow;
+        transition: all 0.5s ease-in-out;
+     }
+}
