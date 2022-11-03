@@ -38,10 +38,22 @@ main form fieldset input, main form fieldset textarea {
     border-bottom: solid red .2rem
 }
 
+main .boxes {
+    width: 100%
+}
+
+main .boxes .box {
+    width: 80%
+}
+
 main .link {
     text-decoration: none;
     color: snow;
     margin-left: 1rem;
+}
+
+main a {
+    color: snow;
 }
 
 .fa-linkedin {
@@ -78,4 +90,8 @@ main .link {
         color: snow;
         transition: all 0.5s ease-in-out;
      }
+
+     main .boxes .box {
+        width: 40%
+    }
 }
