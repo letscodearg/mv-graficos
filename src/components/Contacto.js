@@ -1,8 +1,9 @@
 import '../styles/Contacto.css';
-import {Link} from "react-router-dom";
+import {Link,redirect} from "react-router-dom";
 import Iframe from 'react-iframe';
 import { useState } from 'react';
 import axios from 'axios';
+import Swal from 'sweetalert2'
 
 function Contacto() {
 
@@ -12,40 +13,58 @@ function Contacto() {
     email: "",
     msg: ""
   })
-
-  function changeValues (e) {
-    setValues({
-      name: e.target.name === "name" ? e.target.value : values.name,
-      phone: e.target.name === "phone" ? e.target.value : values.phone,
-      email: e.target.name === "email" ? e.target.value : values.email,
-      msg: e.target.name === "msg" ? e.target.value : values.msg
-    }) // target se refiere a la etiqueta donde esta la funcion
-  }
-
   const [validation, setValidation] = useState(false)
+
+  const changeValues = (event) => setValues(values => ({...values, [event.target.name]: event.target.value}))
+
   const sendForm = async (e) => {
+    e.preventDefault();
     try {
-      e.preventDefault()
-      if (values.name.length < 0 && 
-        values.phone.length < 0 && 
-        values.email.length < 0 && 
-        values.msg.length < 0) {
-        setValidation(true)
-      }
-      if (validation === true) {
-        const endpoint = "http://localhost/mv-graficos/src/php/contacto.php";
-        const resp = await axios({
-          method: "post",
-          url: `${endpoint}`,
-          headers: { 'content-type': 'application/json' },
-          data: values
-        })
-        if (resp.data.response === true) {
-          alert("mensaje enviado")
+        // Recorremos cada una de los values
+        for (const key in values) {
+          if (Object.hasOwnProperty.call(values, key)) {
+            const value = values[key];
+            if(value.length > 0){
+              setValidation(true)
+            }else{
+              setValidation(false)
+            }
+          }
         }
-      }
+        // Si paso todas las validaciones
+        if(validation == true){
+          let req = await axios({
+            method: "post",
+            url:'http://localhost/mv-graficos/src/php/contacto.php',
+            headers: { "content-type": "application/json" },
+            data: values
+          })
+          let res = await req.data
+          if(res.response){
+            Swal.fire({
+              titleText: 'Gracias!',
+              text: 'Te responderemos a la brevedad',
+              icon: 'success',
+            })
+            return redirect('/')
+          } else{
+            Swal.fire({
+              titleText: 'Error!',
+              text: 'No pudimos enviar el correo',
+              icon: 'error',
+            })
+          }
+          
+        }else{
+          Swal.fire({
+            titleText: 'Error!',
+            text: 'Por favor completa todos los campos',
+            icon: 'error',
+          })
+        }
+
     } catch (error) {
-      console.error(error);
+      console.log(new Error(error))
     }
   }
 
@@ -56,19 +75,19 @@ function Contacto() {
         <h1>Contacto</h1>
         <form className="df cl jcc aic" onSubmit={sendForm}>
           <fieldset className="df jcb">
-            <label for="name">Nombre</label>
+            <label htmlFor="name">Nombre</label>
             <input type="text" name="name" value={values.name} onChange={changeValues} />
           </fieldset>
           <fieldset className="df jcb">
-            <label for="phone">Teléfono</label>
+            <label htmlFor="phone">Teléfono</label>
             <input type="phone" name="phone" value={values.phone} onChange={changeValues}/>
           </fieldset>
           <fieldset className="df jcb">
-            <label for="email">E-Mail</label>
+            <label htmlFor="email">E-Mail</label>
             <input type="email" name="email" value={values.email} onChange={changeValues}/>
           </fieldset>
           <fieldset className="df jcb">
-            <label for="msg">Mensaje</label>
+            <label htmlFor="msg">Mensaje</label>
             <textarea name="msg" value={values.msg} onChange={changeValues}/>
           </fieldset>
           <button type="submit">Enviar</button>
@@ -100,7 +119,7 @@ function Contacto() {
                 <p>Lacroze 5833, Billinghurst <br/> Provincia de Buenos Aires, Argentina</p>
             </section>
             <section className="df jcc aic">
-              <a rel="noreferrer" href="https://www.linkedin.com/company/mv-graficos/about/?viewAsMember=true" target="_blank"><i class="fa-brands fa-linkedin"/></a>
+              <a rel="noreferrer" href="https://www.linkedin.com/company/mv-graficos/about/?viewAsMember=true" target="_blank"><i className="fa-brands fa-linkedin"/></a>
             </section>
         </article>
       </section>
