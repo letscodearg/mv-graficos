@@ -1,4 +1,4 @@
-main .main p{
+/* main .main p{
     padding: 0 2rem 0 2rem;
     text-align: justify;
 }
@@ -16,10 +16,7 @@ main .box p{
 }
 
 @media screen and (min-width: 1200px) {
-    main {
-        border-top: #DF001F solid .3rem;
-        margin-top: 2rem;
-    }
+
 
     main article{
         width: 60%;
@@ -34,4 +31,4 @@ main .box p{
         width: 40%;
         margin: 2rem 0.5rem 3rem .5rem;
     }
-}
+} */

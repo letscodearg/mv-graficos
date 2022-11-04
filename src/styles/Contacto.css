@@ -62,11 +62,6 @@ main a {
 }
 
 @media screen and (min-width: 1200px) {
-    main {
-        border-top: #DF001F solid .3rem;
-        margin-top: 2rem;
-    }
-
     main form {
         width: 60%;
         margin-top: 1rem;

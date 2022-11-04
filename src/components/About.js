@@ -2,7 +2,7 @@ import '../styles/About.css';
 
 function Nosotros() {
   return (
-    <main className="df wp rw jcc aic"> 
+    <main className="df wp rw jcc aic about"> 
       <section className="main d-df d-rw d-wp d-jcb d-ais">
         <h1>Nosotros</h1>
         <article>
@@ -11,7 +11,7 @@ function Nosotros() {
           <p>Estamos instalados en una planta con más de 2500 m2 de superficie en la localidad de San Martín, Provincia de Bs. As.</p>
         </article>
       </section>
-      <section className="d-df d-wp d-rw d-jcc d-aic">
+      <section className="d-df d-wp d-rw d-jcc d-aist">
         <article className="df wp rw jcc aic box">
           <h2>MISIÓN</h2>
           <p>Buscar la mayor integración con nuestros clientes, para que ellos logren la mejor presentación de sus productos, en sus mercados nacionales e internacionales, dando la mejor respuesta a sus necesidades.</p>

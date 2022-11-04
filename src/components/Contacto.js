@@ -70,7 +70,7 @@ function Contacto() {
 
 
   return (
-    <main className="df cl jcc aic"> 
+    <main className="df cl jcc aic contacto"> 
       <section className="main d-df d-rw d-wp d-jcb d-ais">
         <h1>Contacto</h1>
         <form className="df cl jcc aic" onSubmit={sendForm}>
@@ -93,7 +93,7 @@ function Contacto() {
           <button type="submit">Enviar</button>
         </form>
       </section>
-      <section className="df wp rw jcc aic d-aist boxes">
+      <section className="df wp rw jca aic d-aist boxes">
         <article className="df wp rw jcc aic box">
           <Iframe 
             url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.90824512346!2d-58.569135349560135!3d-34.581188163716746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9cff3da93bd%3A0xc77d984147ab8032!2sLacroze%205833%2C%20Billinghurst%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1667411822434!5m2!1ses!2sar"

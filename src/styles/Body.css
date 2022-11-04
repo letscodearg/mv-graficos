@@ -1,5 +1,28 @@
 body {
     background-color: snow;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 
+}
+
+main .main p{
+    padding: 0 2rem 0 2rem;
+    text-align: justify;
+}
+
+main .box {
+    background-color: #DF001F;
+    color: snow;
+    margin: .5rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+}
+
+main iframe{
+    border-radius: 1rem;
+}
+
+main .box p{
+    text-align: center;
 }
 
 h1 {
@@ -17,6 +40,24 @@ h2 {
 }
 
 @media screen and (min-width: 1200px) {
+    main {
+        margin: 1rem  0;
+    }
+
+    main article{
+        width: 60%;
+        margin-top: 1rem;
+    }
+
+    main section {
+        width: 100%;
+    }
+
+    main .box {
+        width: 30%;
+        margin: 2rem 0.5rem 3rem .5rem;
+    }
+    
     main h1{
         width: 30%;
         background-color: #DF001F;

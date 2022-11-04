@@ -7,6 +7,7 @@ import Equipos from './components/Equipos';
 import Calidad from './components/Calidad';
 import Clientes from './components/Clientes';
 import Contacto from './components/Contacto';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="calidad" exact="true" element={<Calidad/>} />
         <Route path="clientes" exact="true" element={<Clientes/>} />
         <Route path="contacto" exact="true" element={<Contacto/>} />
+        <Route path="/" exact="true" element={<Home/>} />
       </Route>
     </Routes>
   );

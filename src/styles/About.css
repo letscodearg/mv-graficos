@@ -1,37 +1,7 @@
-main .main p{
-    padding: 0 2rem 0 2rem;
-    text-align: justify;
+.about .box {
+    padding: 1rem 2rem;
 }
 
-main .box {
-    background-color: #DF001F;
-    color: snow;
-    padding: 1rem;
-    margin: .5rem 1rem 1rem 1rem;
-    border-radius: 1rem;
-}
-
-main .box p{
-    text-align: center;
-}
-
-@media screen and (min-width: 1200px) {
-    main {
-        border-top: #DF001F solid .3rem;
-        margin-top: 2rem;
-    }
-
-    main article{
-        width: 60%;
-        margin-top: 1rem;
-    }
-
-    main section {
-        width: 100%;
-    }
-
-    main .box {
-        width: 40%;
-        margin: 2rem 0.5rem 3rem .5rem;
-    }
+.about .box h2{
+    margin: 0
 }
