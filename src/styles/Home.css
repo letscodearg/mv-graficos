@@ -29,7 +29,7 @@
 }
 
 .home a {
-    background-color: #DF001F;
+    background-color: rgb(31, 31, 31);
     color: snow;
     border-radius: 1rem;
     margin: 1rem 0;
@@ -38,6 +38,19 @@
     font-weight: bold;
     text-decoration: none;
     text-align: center;
+}
+
+.carousel {
+    width: 100%
+}
+
+.home ul {
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    width: 50%
 }
 
 @media screen and (min-width: 1200px) {
@@ -70,9 +83,6 @@
     }
 
     .home a {
-        background-color: #DF001F;
-        color: snow;
-        padding: .8rem;
         border-radius: 1rem;
         margin: 1rem 0;
         text-transform: uppercase;
@@ -84,9 +94,18 @@
         width: 40%;
         text-decoration: none;
         text-align: center;
-        
     }
+
+    .home a:hover {
+        background-color: #DF001F;
+        transition: all 0.5s ease-in-out;
+    }
+
     .text {
         width: 50%
+    }
+
+    .carousel img {
+        width: 40%
     }
 }

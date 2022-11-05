@@ -1,8 +1,11 @@
 import '../styles/Home.css';
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
 import imgHome from '../assets/home/imgHome.jpg';
+import CarouselHome from './CarouselHome'
+
 
 function Home() {
+ 
   return (
     <main className="df wp rw jcc aic home"> 
       <section className="df rw wp jca aic d-jcb d-ais">
@@ -20,7 +23,9 @@ function Home() {
               </Link>
             </section>
           </article>
-
+      </section>
+      <section className="carousel df rw wp jcc aic">
+        <CarouselHome/>
       </section>
     </main>
   );

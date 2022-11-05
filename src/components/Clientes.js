@@ -1,16 +1,28 @@
 import '../styles/Clientes.css';
-import logo from '../assets/logo.png';
+import celusal from '../assets/clients/celusal.jfif';
+import crysf from '../assets/clients/crysf.png';
+import maped from '../assets/clients/maped.png';
+import quaker from '../assets/clients/quaker.png';
 
 function Clientes() {
   return (
-    <main className="df wp rw jcc aic"> 
+    <main className="df wp rw jcc aic clients"> 
       <section className="main d-df d-rw d-wp d-jcb d-ais">
         <h1>Nuestros Clientes</h1>
       </section>
-      <section className="d-df d-wp d-rw d-jcc d-aic">
-        <figure className="df wp rw jcc aic">
-          <img src={logo}  alt="logo" />
-        </figure>
+      <section className="df rw wp jca aic clientsBox">
+          <img src={celusal}  alt="logo" />
+          <img src={crysf}  alt="logo" />
+          <img src={maped}  alt="logo" />
+          <img src={quaker}  alt="logo" />
+          <img src={celusal}  alt="logo" />
+          <img src={crysf}  alt="logo" />
+          <img src={maped}  alt="logo" />
+          <img src={quaker}  alt="logo" />
+          <img src={celusal}  alt="logo" />
+          <img src={crysf}  alt="logo" />
+          <img src={maped}  alt="logo" />
+          <img src={quaker}  alt="logo" />
       </section>
     </main>
   );
