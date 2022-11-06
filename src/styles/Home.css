@@ -1,111 +1,94 @@
-.home section {
-    width: 100%;
-    position: relative;
+#banner {
+  width: 100%;
+  position: relative;
 }
 
-.home figure {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+#banner figure {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.home figure img {
-    width: 100%;
-    margin-top: 1rem;
+#banner figure img {
+  width: 100%;
+  margin-top: 1rem;
 }
 
-.home h2 {
-    font-size: 1.3rem;
-    text-align: right;
-    width: 45%;
-    font-weight: 500;
-    position: absolute;
-    bottom: 12rem;
-    left: 1rem;
-    background-color: #DF001F;
-    color: snow;
-    padding: .8rem;
-    border-radius: 1rem;
+#banner h2 {
+  font-size: 1.3rem;
+  text-align: right;
+  width: 45%;
+  font-weight: 500;
+  position: absolute;
+  bottom: 12rem;
+  left: 1rem;
+  background-color: #df001f;
+  color: snow;
+  padding: 0.8rem;
+  border-radius: 1rem;
 }
 
-.home a {
-    background-color: rgb(31, 31, 31);
-    color: snow;
-    border-radius: 1rem;
-    margin: 1rem 0;
-    text-transform: uppercase;
-    padding: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-}
-
-.carousel {
-    width: 100%
-}
-
-.home ul {
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel img {
-    width: 50%
+#banner a {
+  background-color: rgb(31, 31, 31);
+  color: snow;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
-    .home section {
-        width: 90%;
-        position: relative;
-        flex-direction: row-reverse;
-    }
+  #banner {
+    width: 90%;
+    position: relative;
+    flex-direction: row-reverse;
+  }
 
-    .home figure {
-        width: 50%;
-    }
-    
-    .home figure img {
-        margin-top: 0;
-    }
-    
-    .home h2 {
-        font-size: 3rem;
-        text-align: left;
-        width: 100%;
-        font-weight: 500;
-        position: relative;
-        bottom: 0;
-        left: 0;
-        color: #DF001F;
-        background-color: transparent;
-        padding: 0;
-        border-radius: 0;
-    }
+  #banner figure {
+    width: 50%;
+  }
 
-    .home a {
-        border-radius: 1rem;
-        margin: 1rem 0;
-        text-transform: uppercase;
-        padding: 1.3rem;
-        font-weight: bold;
-        font-size: 1rem;
-        font-weight: 500;
-        margin-top: 4rem;
-        width: 40%;
-        text-decoration: none;
-        text-align: center;
-    }
+  #banner figure img {
+    margin-top: 0;
+  }
 
-    .home a:hover {
-        background-color: #DF001F;
-        transition: all 0.5s ease-in-out;
-    }
+  #banner h2 {
+    font-size: 3rem;
+    text-align: left;
+    width: 100%;
+    font-weight: 500;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    color: #df001f;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
 
-    .text {
-        width: 50%
-    }
+  #banner a {
+    border-radius: 1rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    padding: 1.3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 4rem;
+    width: 40%;
+    text-decoration: none;
+    text-align: center;
+  }
 
-    .carousel img {
-        width: 40%
-    }
+  #banner a:hover {
+    background-color: #df001f;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #banner .text {
+    width: 50%;
+  }
 }
