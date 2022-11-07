@@ -33,12 +33,16 @@ const Text = styled.h2`
   z-index: 2;
   padding: 1rem 0.25rem;
   text-transform: uppercase;
-  font-family: sans-serif;    
+  font-family: sans-serif;
   position: absolute;
   top: 50%;
 
   @media screen and (min-width: 1200px) {
     opacity: 0;
+    transition: 0.3s ease-in-out all;
+    :hover {
+      opacity: 1;
+    }
   }
 `;
 
