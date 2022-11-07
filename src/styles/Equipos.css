@@ -1,35 +1,28 @@
-/* main .main p{
-    padding: 0 2rem 0 2rem;
-    text-align: justify;
+.equipos img {
+    width: 100%;
+    margin-bottom: 1rem;
+    opacity: 0.75;
+
 }
 
-main .box {
-    background-color: #DF001F;
-    color: snow;
-    padding: 1rem;
-    margin: .5rem 1rem 1rem 1rem;
-    border-radius: 1rem;
+.equipos .imgBox {
+    position: relative;
+    width: 80%;
 }
 
-main .box p{
+.equipos p {
+    position: absolute;
+    top: 50%;
+    left: 0;
     text-align: center;
+    width: 80%;
+    color: snow;
+    font-weight: bold;
+    background-color: #DF001F;
+    padding: 2rem
 }
 
 @media screen and (min-width: 1200px) {
 
 
-    main section {
-        width: 100%
-    }
-
-
-    main article{
-        width: 60%;
-        margin-top: 1rem;
-    }
-
-    main .box {
-        width: 40%;
-        margin: 2rem 0.5rem 3rem .5rem;
-    }
-} */
+}
