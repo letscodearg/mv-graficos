@@ -24,7 +24,9 @@ const Box = styled.article`
   }
 
   @media screen and (min-width: 1200px) {
-    width: 30%;
+    width: 10%;
+    margin: 1rem;
+    cursor: pointer
   }
 `;
 const Text = styled.h2`
