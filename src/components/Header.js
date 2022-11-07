@@ -30,7 +30,7 @@ function Header() {
                     {url: "/nosotros", title: "Nosotros"},
                     {url: "/lineas", title: "Líneas de Productos"},
                     {url: "/equipamiento", title: "Equipamiento"},
-                    {url: "/calidad", title: "Gestión de Calidad"},
+                    {url: "/calidad", title: "Política de Calidad"},
                     {url: "/clientes", title: "Nuestros Clientes"},
                     {url: "/contacto", title: "Contacto"}
                 ]
@@ -46,7 +46,7 @@ function Header() {
                     {url: "/nosotros", title: "Nosotros"},
                     {url: "/lineas", title: "Líneas de Productos"},
                     {url: "/equipamiento", title: "Equipamiento"},
-                    {url: "/calidad", title: "Gestión de Calidad"},
+                    {url: "/calidad", title: "Política de Calidad"},
                     {url: "/clientes", title: "Nuestros Clientes"},
                     {url: "/contacto", title: "Contacto"}
                 ]} 

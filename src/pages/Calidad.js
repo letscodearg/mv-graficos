@@ -1,30 +1,48 @@
 import '../styles/Calidad.css';
+import iso from '../assets/calidad/iso.jpg';
+import fsc from '../assets/calidad/fsc.jpg';
 
 function Calidad() {
   return (
-    <main className="df wp rw jcc aic"> 
+    <main className="df wp rw jcc aic calidad"> 
       <section className="main d-df d-rw d-wp d-jcb d-ais">
-        <h1>Gestión de Calidad</h1>
+        <h1>Política de Calidad</h1>
         <article>
-          <p>Nuestro propósito como empresa dedicada a la comercialización impresos gráficos es lograr la satisfacción de los requisitos implícitos y explícitos de nuestros clientes y partes interesadas pertinentes, mediante un compromiso personal y profesional de todos los que integramos MV Gráficos S.A.</p>
-          <p>Para ello hemos desarrollado un modelo de trabajo, de acuerdo a las necesidades y características definidas por nuestros clientes, brindando un servicio de excelencia en la presentación de sus productos.</p>
-          <p>Nuestros valores han sido transformados en objetivos, para lograr este compromiso:</p>
+          <p>
+            Nuestro propósito como empresa dedicada a la comercialización de impresos gráficos es lograr la satisfacción de los 
+            requisitos implícitos y explícitos <b>de nuestros clientes, proveedores, colaboradores y demás partes interesadas pertinentes, </b> 
+            mediante un compromiso personal y profesional de todos los que integramos MV Gráficos S.A.
+          </p>
+          <p>
+            Para ello hemos desarrollado un modelo de trabajo,  de acuerdo a las necesidades y características propias, brindando un servicio 
+            de excelencia <b>con un enfoque de sostenibilidad en toda nuestra actividad basándose en el liderazgo, compromiso y provisión de los 
+            recursos necesarios para el cumplimiento de los objetivos del sistema de calidad, inocuidad y cadena de custodia:</b>
+          </p>
           <ul>
-            <li>Sentido de Pertenencia</li>
-            <li>Compromiso con la calidad y cumplimiento en los tiempos solicitados</li>
-            <li>Trabajo en Equipo</li>
-            <li>Orientación hacia el cliente productos y servicios de excelencia</li>
+            <li>Fomentando las competencias a través de la capacitación, la concientización, la evaluación y el reconocimiento del equipo de trabajo.</li>
+            <li>Sosteniendo un ambiente de trabajo que favorezca el compromiso y la participación de todo el personal.</li>
+            <li>Generando relaciones confiables con las partes interesadas a través de mecanismos de comunicación apropiados.</li>
+            <li>Previniendo y controlando los riesgos de seguridad y salud ocupacional: evitando el trabajo peligroso, el trabajo infantil, el trabajo forzoso, los castigos, las condiciones de servidumbre, la discriminación, la retención de los salarios y/o documentación del trabajador.</li>
+            <li>Previendo la contaminación y dar prioridad a la reducción de los puntos de generación de contaminación para garantizar la inocuidad de los productos, la optimización del uso de materias primas e insumos, los recursos y la maquinaria empleada.</li>
           </ul>
-          <p>Esta Política la sustentamos, mediante un sistema de mejora continua basado en la Norma ISO 9001:2015, que nos permiten verificar, corregir y mejorar constantemente nuestros objetivos y compromisos con los clientes y partes interesadas pertinentes.</p>
         </article>
       </section>
-      <section className="d-df d-wp d-rw d-jcc d-aic">
-        <article className="df wp rw jcc aic box">
-          
-        </article>
-        <article className="df wp rw jcc aic box">
-          
-        </article>
+      <section className="df rw wp jcc aic">
+          <figure className="df jcc desktop">
+            <img src={iso} alt="iso9001"/>
+          </figure>
+          <p className="alignCenter box">
+            <b>MV Gráficos S.A.</b> <br/>
+            ha decidido alinearse y cumplir con los requisitos aplicables de las Normas <b>ISO 9001:2015</b> 
+            de Sistemas Gestion de la Calidad, <b>FSC de Cadena de Custodia</b> y <b>FSSC 22000:2018</b> de Sistemas de gestion de la inocuidad 
+            de los alimentos. Con el fin de cumplir con este compromiso y con el proceso de la mejora continua.
+          </p>
+          <figure className="df jcc mobile">
+            <img src={iso} alt="iso9001"/>
+          </figure>
+          <figure className="df jcc">
+            <img src={fsc} alt="fsc"/>
+          </figure>
       </section>
     </main>
   );

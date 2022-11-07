@@ -1,33 +1,42 @@
-/* main .main p{
-    padding: 0 2rem 0 2rem;
-    text-align: justify;
+#logosCalidad {
+    width: 100%
 }
 
-main .box {
-    background-color: #DF001F;
-    color: snow;
-    padding: 1rem;
-    margin: .5rem 1rem 1rem 1rem;
-    border-radius: 1rem;
+.calidad figure{
+    width: 80%
 }
 
-main .box p{
-    text-align: center;
+.calidad figure img{
+    width: 30%
+}
+
+.calidad .box {
+    padding: 1rem 2rem;
+}
+
+.calidad .box h2{
+    margin: 0
+}
+
+.calidad .desktop {
+    display: none
 }
 
 @media screen and (min-width: 1200px) {
 
-    main article{
-        width: 60%;
-        margin-top: 1rem;
+    .calidad .mobile {
+        display: none
     }
 
-    main section {
-        width: 100%;
+    .calidad .desktop {
+        display: flex
     }
 
-    main .box {
-        width: 40%;
-        margin: 2rem 0.5rem 3rem .5rem;
+    .calidad figure{
+        width: 20%
     }
-} */
+    
+    .calidad figure img{
+        width: 40%
+    }
+} 

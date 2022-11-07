@@ -2,12 +2,12 @@ body {
     background-color: snow;
     box-sizing: border-box;
     margin: 0;
-    padding: 0 
+    padding: 0;
+    text-align: justify;
 }
 
-main .main p{
+main .main p, main .main ul li{
     padding: 0 2rem 0 2rem;
-    text-align: justify;
 }
 
 main .box {
@@ -37,6 +37,10 @@ h2 {
     font-size: 1.3rem;
     text-align: center;
     width: 100%;
+}
+
+.alignCenter {
+    text-align: center;
 }
 
 @media screen and (min-width: 1200px) {

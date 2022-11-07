@@ -1,29 +1,24 @@
-main .main p{
-    padding: 0 2rem 0 2rem;
-    text-align: justify;
-}
-
-main form {
+.contacto form {
     font-weight: bold;
     width: 100vw;
 
 }
 
-main form label {
+.contacto form label {
     margin-right: 1rem;
     width: 20%
 }
 
-main form fieldset {
+.contacto form fieldset {
     border: none;
     width: 80%
 }
 
-main form input, main form textarea {
+.contacto form input, main form textarea {
     width: 80%
 }
 
-main form button {
+.contacto form button {
    border-radius: 2rem;
    background-color: #DF001F;
    color: snow;
@@ -33,26 +28,26 @@ main form button {
    margin-bottom: 1rem;
 }
 
-main form fieldset input, main form fieldset textarea {
+.contacto form fieldset input, .contacto form fieldset textarea {
     border: none;
     border-bottom: solid red .2rem
 }
 
-main .boxes {
+.contacto .boxes {
     width: 100%
 }
 
-main .boxes .box {
-    width: 80%
+.contacto .boxes .box.padding {
+    padding: 1rem 2rem;
 }
 
-main .link {
+.contacto .link {
     text-decoration: none;
     color: snow;
     margin-left: 1rem;
 }
 
-main a {
+.contacto a {
     color: snow;
 }
 
@@ -61,32 +56,39 @@ main a {
     margin-top: 1rem;
 }
 
+main iframe{
+    width: 100%;
+    margin: .5rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+}
+
 @media screen and (min-width: 1200px) {
-    main form {
+    .contacto form {
         width: 60%;
         margin-top: 1rem;
     }
 
-    main section {
+    .contacto section {
         width: 100%;
     }
 
-    main form {
+    .contacto form {
         margin-top: 3rem;
     }
 
-    main form fieldset input, main form fieldset textarea {
+    .contacto form fieldset input, .contacto form fieldset textarea {
         margin-bottom: 2rem;
         outline: none;
     }
 
-    main form button:hover {
+    .contacto form button:hover {
         background-color: grey;
         color: snow;
         transition: all 0.5s ease-in-out;
      }
 
-     main .boxes .box {
-        width: 40%
+    main .iframe{
+        width: 40%;
     }
+
 }

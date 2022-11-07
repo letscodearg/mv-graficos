@@ -9,7 +9,7 @@ function Footer() {
             <Link to="/lineas" className="link">Nosotros</Link>
             <Link to="/equipamiento" className="link">Líneas de Productos</Link>
             <Link to="/calidad" className="link">Equipamiento</Link>
-            <Link to="/clientes" className="link">Gestión de Calidad</Link>
+            <Link to="/clientes" className="link">Política de Calidad</Link>
             <Link to="/contacto" className="link">Nuestros Clientes</Link>
             <Link to="/lineas" className="link">Contacto</Link>
         </section>
