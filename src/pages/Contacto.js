@@ -108,8 +108,8 @@ function Contacto() {
           <button type="submit">Enviar</button>
         </form>
       </section>
-      <section className="df cl d-wp d-rw jca aic d-aist boxes">
-        <article className="df wp rw jcc aic iframe">
+      <section className="d-df d-wp d-rw d-jcc d-aist">
+        <article className="df wp rw jcc aic box">
           <Iframe
             url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.90824512346!2d-58.569135349560135!3d-34.581188163716746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9cff3da93bd%3A0xc77d984147ab8032!2sLacroze%205833%2C%20Billinghurst%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1667411822434!5m2!1ses!2sar"
             width="640px"
@@ -120,7 +120,7 @@ function Contacto() {
             position="relative"
           />
         </article>
-        <article className="df cl jcc aic box padding">
+        <article className="df wp rw jcc aic box">
           <section className="df rw wp jcc aic">
             <i className="fa-solid fa-envelope"></i>
             <Link className="link">info@mv-graficos.com.ar</Link>
