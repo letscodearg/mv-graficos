@@ -10,6 +10,9 @@ function Equipos() {
         <section className="df cl jcc aic d-rw d-wp d-jca">
           <BoxHover src={equipo1} text="cortadora de bobinas y gillotina" />
           <BoxHover src={equipo1} text="cortadora de bobinas y gillotina" />
+          <BoxHover src={equipo1} text="cortadora de bobinas y gillotina" />
+          <BoxHover src={equipo1} text="cortadora de bobinas y gillotina" />
+          <BoxHover src={equipo1} text="cortadora de bobinas y gillotina" />
         </section>
       </section>
 
