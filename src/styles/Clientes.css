@@ -1,14 +1,28 @@
+.clients section {
+    width: 70%;
+}
+
 .clients section img{
-    width: 40%
+    width: 40%;
+    margin: .8rem;
 }
 
 @media screen and (min-width: 1200px) {
+    .clients section {
+        width: 100%;
+    }
+
     .clients .clientsBox {
         width: 70%
     }
     
     .clients section img{
-        width: 15%
+        width: 13%
+    }
+
+    .clients section img:hover{
+        transform: scale(1.2);
+        transition: all 0.5s ease-in-out;
     }
 
 /*     main article{

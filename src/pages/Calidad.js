@@ -4,7 +4,7 @@ function Calidad() {
   return (
     <main className="df wp rw jcc aic"> 
       <section className="main d-df d-rw d-wp d-jcb d-ais">
-        <h1>Política de Calidad</h1>
+        <h1>Gestión de Calidad</h1>
         <article>
           <p>Nuestro propósito como empresa dedicada a la comercialización impresos gráficos es lograr la satisfacción de los requisitos implícitos y explícitos de nuestros clientes y partes interesadas pertinentes, mediante un compromiso personal y profesional de todos los que integramos MV Gráficos S.A.</p>
           <p>Para ello hemos desarrollado un modelo de trabajo, de acuerdo a las necesidades y características definidas por nuestros clientes, brindando un servicio de excelencia en la presentación de sus productos.</p>

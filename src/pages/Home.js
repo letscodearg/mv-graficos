@@ -2,10 +2,11 @@ import "../styles/Home.css";
 import { Link } from "react-router-dom";
 import imgHome from "../assets/home/imgHome.jpg";
 import { Carousel } from "../components/Carousel";
-import celusal from "../assets/clients/celusal.jfif";
+import celusal from "../assets/clients/celusal.png";
 import crysf from "../assets/clients/crysf.png";
 import maped from "../assets/clients/maped.png";
 import quaker from "../assets/clients/quaker.png";
+import burgerking from "../assets/clients/burgerking.png"
 
 function Home() {
   return (
@@ -23,7 +24,7 @@ function Home() {
         </article>
       </section>
       <Carousel
-        slides={[celusal, crysf, maped, quaker]}
+        slides={[celusal, crysf, maped, quaker, burgerking]}
         velocity={1000}
         interval={5000}
         height={"5rem"}
