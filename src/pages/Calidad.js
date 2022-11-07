@@ -7,7 +7,7 @@ function Calidad() {
     <main className="df wp rw jcc aic calidad"> 
       <section className="main d-df d-rw d-wp d-jcb d-ais">
         <h1>Política de Calidad</h1>
-        <article>
+        <article className="article">
           <p>
             Nuestro propósito como empresa dedicada a la comercialización de impresos gráficos es lograr la satisfacción de los 
             requisitos implícitos y explícitos <b>de nuestros clientes, proveedores, colaboradores y demás partes interesadas pertinentes, </b> 

@@ -48,7 +48,7 @@ h2 {
         margin: 1rem  0;
     }
 
-    main article{
+    main article.article{
         width: 60%;
         margin-top: 1rem;
         padding-right: 2rem;

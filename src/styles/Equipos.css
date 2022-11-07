@@ -1,26 +1,9 @@
 .equipos img {
-    width: 100%;
     margin-bottom: 1rem;
     opacity: 0.75;
 
 }
 
-.equipos .imgBox {
-    position: relative;
-    width: 80%;
-}
-
-.equipos p {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    text-align: center;
-    width: 80%;
-    color: snow;
-    font-weight: bold;
-    background-color: #DF001F;
-    padding: 2rem
-}
 
 @media screen and (min-width: 1200px) {
 

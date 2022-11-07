@@ -11,18 +11,20 @@ const BoxHover = ({ src, text }) => {
 };
 
 const Box = styled.article`
-  width: 25vw !important;
-  height: 25vw !important;
+  width: 80%;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 1rem;
   img {
-    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: contain;
     z-index: 1;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 30%;
   }
 `;
 const Text = styled.h2`
@@ -31,7 +33,13 @@ const Text = styled.h2`
   z-index: 2;
   padding: 1rem 0.25rem;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: sans-serif;    
+  position: absolute;
+  top: 50%;
+
+  @media screen and (min-width: 1200px) {
+    opacity: 0;
+  }
 `;
 
 export default BoxHover;
