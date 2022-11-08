@@ -1,16 +1,23 @@
+import {useState} from 'react';
 import React from "react";
 import styled from "styled-components";
 
-const BoxHover = ({ src, text }) => {
+const BoxHover = ({ src, text, altText }) => {
+  const [active, setActive] = useState(false)
+
   return (
-    <Box>
-      <img src={src} alt="box image" />
-      <Text>{text}</Text>
-    </Box>
+    <>
+      <Box onClick={() => setActive(!active)}>
+        <img src={src} alt="box image" />
+        <Text>{text}</Text>
+      </Box>
+      <TextBox><AltText>{active ? altText : "TEXTO GENERICO"}</AltText></TextBox>
+    </>
+
   );
 };
 
-const Box = styled.article`
+const Box = styled.section`
   width: 80%;
   position: relative;
   display: flex;
@@ -41,11 +48,13 @@ const Text = styled.h2`
 
   @media screen and (min-width: 1200px) {
     opacity: 0;
-    transition: 0.3s ease-in-out all;
-    :hover {
-      opacity: 1;
-    }
   }
+`;
+const TextBox = styled.article`
+
+`;
+const AltText = styled.p`
+
 `;
 
 export default BoxHover;
