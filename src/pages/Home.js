@@ -1,6 +1,8 @@
 import "../styles/Home.css";
 import { Link } from "react-router-dom";
 import imgHome from "../assets/home/imgHome.jpg";
+import iso from '../assets/calidad/iso.jpg';
+import fsc from '../assets/calidad/fsc.jpg';
 import { Carousel } from "../components/Carousel";
 import celusal from "../assets/clients/celusal.png";
 import crysf from "../assets/clients/crysf.png";
@@ -12,16 +14,22 @@ function Home() {
   return (
     <main className="df wp rw jcc aic home">
       <section className="df rw wp jca aic d-jcb d-ais" id="banner">
-        <figure>
+        <figure className="imgHome">
           <img src={imgHome} alt="MV Gráficos" />
         </figure>
         <article className="text d-df d-rw d-wp d-jcb d-aic">
-          <h2>UNA FRASE BUENA PARA EL HOME QUE LLAME LA ATENCIÓN</h2>
-          <section className="df cl d-df d-rw d-wp d-jca d-aic">
-            <Link to="/calidad">Políticas de Calidad</Link>
-            <Link to="/contacto">Contactanos</Link>
+          <section className="df cl d-df d-rw d-wp d-jce d-aic bannerText">
+            <figure className="df jcc mobile">
+              <img src={iso} alt="iso9001"/>
+            </figure>
+            <figure className="df jcc">
+              <img src={fsc} alt="fsc"/>
+            </figure>
           </section>
         </article>
+      </section>
+      <section className="df cl d-df d-rw d-wp d-jcc d-aic contacto">
+        <Link to={"/contacto"}>Contáctenos</Link>
       </section>
       <Carousel
         slides={[celusal, crysf, maped, quaker, burgerking]}

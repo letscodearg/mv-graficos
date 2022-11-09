@@ -3,92 +3,57 @@
   position: relative;
 }
 
-#banner figure {
+#banner .imgHome {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-#banner figure img {
+#banner .imgHome img {
   width: 100%;
   margin-top: 1rem;
 }
 
-#banner h2 {
-  font-size: 1.3rem;
-  text-align: right;
-  width: 45%;
-  font-weight: 500;
-  position: absolute;
-  bottom: 12rem;
-  left: 1rem;
-  background-color: #df001f;
-  color: snow;
-  padding: 0.8rem;
-  border-radius: 1rem;
+#banner .bannerText {
+  display: none
 }
 
-#banner a {
-  background-color: rgb(31, 31, 31);
-  color: snow;
-  border-radius: 1rem;
-  margin: 1rem 0;
-  text-transform: uppercase;
-  padding: 1rem;
-  font-weight: bold;
-  text-decoration: none;
+#banner .bannerText img{
+  width: 100px;
+}
+
+.home .contacto {
+  background-color: #ccc;
+  padding: 3rem;
   text-align: center;
 }
 
+.home .contacto a{
+  color: #DF001F;
+  text-decoration: none;
+  font-size: 2rem;
+
+}
+
+.home .contacto a:hover{
+  transform: scale(1.3);
+  transition: all 0.5s ease-in-out;
+}
+
+
 @media screen and (min-width: 1200px) {
-  #banner {
-    width: 90%;
-    position: relative;
-    flex-direction: row-reverse;
-  }
-
-  #banner figure {
-    width: 50%;
-  }
-
-  #banner figure img {
-    margin-top: 0;
-  }
-
-  #banner h2 {
-    font-size: 3rem;
-    text-align: left;
+  #banner .bannerText {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    background-color: snow;
     width: 100%;
-    font-weight: 500;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    color: #df001f;
-    background-color: transparent;
-    padding: 0;
-    border-radius: 0;
+    font-size: 1.5rem;
   }
-
-  #banner a {
-    border-radius: 1rem;
-    margin: 1rem 0;
-    text-transform: uppercase;
-    padding: 1.3rem;
-    font-weight: bold;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 4rem;
-    width: 40%;
-    text-decoration: none;
-    text-align: center;
+  
+  #banner .bannerText img{
+    width: 100px;
   }
-
-  #banner a:hover {
-    background-color: #df001f;
-    transition: all 0.5s ease-in-out;
-  }
-
-  #banner .text {
-    width: 50%;
-  }
+  
 }

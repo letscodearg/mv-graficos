@@ -7,7 +7,7 @@
     bottom: 0;
     z-index: 99;
     background: #DF001F;
-    color: snow;
+    color: black;
     padding-top: 5em;
     width: 100%;
 }
@@ -25,11 +25,6 @@
     padding: 1.5rem 0;
 }
 
-.menuItem:hover {
-    background-color: #DF001F;
-    transition: all 0.5s ease-in-out;
-}
-
 .showMenu {
     transform: translateY(0);
   }
@@ -40,23 +35,23 @@
         position: relative;
         z-index: 99;
         background: snow;
-        color: #DF001F;
+        color: black;
         padding-top: 0;
         width: auto;
     }
 
     .menuItem {
-        color: #DF001F;
+        color: black;
         padding: .5rem;
         transition: all .4s ease-in-out;
         cursor: pointer;
         width: auto;
         transition: all 0.5s ease-in-out;
+        font-weight: bold;
     }
 
     .menuItem:hover {
-        background-color: #DF001F;
-        color: snow;
+        color: #DF001F;
         padding: .5rem;
         border-radius: .5rem;
     }

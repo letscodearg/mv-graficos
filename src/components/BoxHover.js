@@ -1,17 +1,15 @@
-import {useState} from 'react';
 import React from "react";
 import styled from "styled-components";
 
-const BoxHover = ({ src, text, altText }) => {
-  const [active, setActive] = useState(false)
+const BoxHover = ({ src, text }) => {
+
 
   return (
     <>
-      <Box onClick={() => setActive(!active)}>
+      <Box >
         <img src={src} alt="box image" />
         <Text>{text}</Text>
       </Box>
-      <TextBox><AltText>{active ? altText : "TEXTO GENERICO"}</AltText></TextBox>
     </>
 
   );
@@ -32,7 +30,7 @@ const Box = styled.section`
 
   @media screen and (min-width: 1200px) {
     width: 10%;
-    margin: 1rem;
+    margin: 4rem 1rem;
     cursor: pointer
   }
 `;
