@@ -32,7 +32,7 @@ function Home() {
         <Link to={"/contacto"}>Contáctenos</Link>
       </section>
       <Carousel
-        slides={[celusal, crysf, maped, quaker, burgerking]}
+        slides={[celusal, crysf, maped, quaker, burgerking, celusal]}
         velocity={1000}
         interval={5000}
         height={"5rem"}

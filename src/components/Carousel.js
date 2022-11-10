@@ -30,7 +30,7 @@ const Carousel = ({
     galeria.current.addEventListener("mouseleave", () =>
       setInterval(autoplay, interval)
     );
-  }, [velocity, interval]);
+  }, [velocity, interval]); 
   return (
     <Contenedor>
       <Galeria ref={galeria} height={height}>
@@ -53,6 +53,10 @@ const Contenedor = styled.section`
 const Galeria = styled.div`
   display: flex;
   flex-wrap: nowrap;
+  width: 160%;
+  @media screen and (min-width: 1200px) {
+    width: 120%;
+  }
   ${(props) =>
     props.height !== "auto"
       ? `max-height:${props.height};`
