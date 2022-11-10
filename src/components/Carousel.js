@@ -5,6 +5,8 @@ const Carousel = ({
   velocity = 500,
   interval = 5000,
   height = "auto",
+  mbWidth = "160%",
+  dkWidth = "120%",
 }) => {
   const galeria = useRef(null);
   useEffect(() => {
@@ -30,10 +32,15 @@ const Carousel = ({
     galeria.current.addEventListener("mouseleave", () =>
       setInterval(autoplay, interval)
     );
-  }, [velocity, interval]); 
+  }, [velocity, interval]);
   return (
     <Contenedor>
-      <Galeria ref={galeria} height={height}>
+      <Galeria
+        ref={galeria}
+        height={height}
+        mbWidth={mbWidth}
+        dkWidth={mbWidth}
+      >
         {slides &&
           slides.map((slide, index) => (
             <Slide key={index}>
@@ -53,9 +60,11 @@ const Contenedor = styled.section`
 const Galeria = styled.div`
   display: flex;
   flex-wrap: nowrap;
-  width: 160%;
+  ${(props) =>
+    props.mbWidth !== "auto" ? `width:${props.mbWidth};` : `width:auto;`}
   @media screen and (min-width: 1200px) {
-    width: 120%;
+    ${(props) =>
+      props.dkWidth !== "auto" ? `width:${props.dkWidth};` : `width:auto;`}
   }
   ${(props) =>
     props.height !== "auto"
