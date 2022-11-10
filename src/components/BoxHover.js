@@ -29,11 +29,9 @@ const Box = styled.section`
     width: 10%;
     cursor: pointer;
     &:hover {
-      img {
         z-index: 2;
-        transform: scale(1.5);
+        transform: scale(2);
         transition: all 0.5s ease-in-out;
-      }
       h2 {
         z-index: 2;
         opacity: 1;
@@ -57,9 +55,10 @@ const Text = styled.h2`
     transition: all 0.5s ease-in-out;
     top: 0;
     margin: 0;
-    font-size: 100%;
-    padding: 1.25rem;
-    line-height: 1.5rem;
+    font-size: .5rem;
+    width: 80%;
+    padding: .5rem;
+    line-height: .8rem;
   }
 `;
 

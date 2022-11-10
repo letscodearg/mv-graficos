@@ -39,7 +39,7 @@ const Carousel = ({
         ref={galeria}
         height={height}
         mbWidth={mbWidth}
-        dkWidth={mbWidth}
+        dkWidth={dkWidth}
       >
         {slides &&
           slides.map((slide, index) => (
