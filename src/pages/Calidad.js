@@ -10,13 +10,13 @@ function Calidad() {
         <article className="article">
           <p>
             Nuestro propósito como empresa dedicada a la comercialización de impresos gráficos es lograr la satisfacción de los 
-            requisitos implícitos y explícitos <b>de nuestros clientes, proveedores, colaboradores y demás partes interesadas pertinentes, </b> 
+            requisitos implícitos y explícitos de nuestros clientes, proveedores, colaboradores y demás partes interesadas pertinentes,
             mediante un compromiso personal y profesional de todos los que integramos MV Gráficos S.A.
           </p>
           <p>
             Para ello hemos desarrollado un modelo de trabajo,  de acuerdo a las necesidades y características propias, brindando un servicio 
-            de excelencia <b>con un enfoque de sostenibilidad en toda nuestra actividad basándose en el liderazgo, compromiso y provisión de los 
-            recursos necesarios para el cumplimiento de los objetivos del sistema de calidad, inocuidad y cadena de custodia:</b>
+            de excelencia con un enfoque de sostenibilidad en toda nuestra actividad basándose en el liderazgo, compromiso y provisión de los 
+            recursos necesarios para el cumplimiento de los objetivos del sistema de calidad, inocuidad y cadena de custodia:
           </p>
           <ul>
             <li>Fomentando las competencias a través de la capacitación, la concientización, la evaluación y el reconocimiento del equipo de trabajo.</li>
