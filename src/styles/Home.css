@@ -23,23 +23,18 @@
 }
 
 .home .contacto {
-  background-color: #ccc;
-  padding: 3rem;
+  background-color: #DF001F;
+  padding: 2rem;
   text-align: center;
+  width: 100%
 }
 
 .home .contacto a{
-  color: #DF001F;
+  color: snow;
   text-decoration: none;
   font-size: 2rem;
 
 }
-
-.home .contacto a:hover{
-  transform: scale(1.3);
-  transition: all 0.5s ease-in-out;
-}
-
 
 @media screen and (min-width: 1200px) {
   #banner .bannerText {
@@ -55,5 +50,15 @@
   #banner .bannerText img{
     width: 100px;
   }
+
+  .home .contacto {
+    padding: 3rem;
+  }
+
+  
+.home .contacto a:hover{
+  transform: scale(1.3);
+  transition: all 0.5s ease-in-out;
+} 
   
 }
