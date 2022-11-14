@@ -105,7 +105,7 @@ function Contacto() {
             <label htmlFor="msg">Mensaje</label>
             <textarea name="msg" value={values.msg} onChange={changeValues} />
           </fieldset>
-          <button type="submit">Enviar</button>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i>  Enviar</button>
         </form>
       </section>
       <section className="d-df d-wp d-rw d-jcc d-aist">

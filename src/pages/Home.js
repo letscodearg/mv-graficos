@@ -20,19 +20,25 @@ function Home() {
           <img src={imgHome} alt="MV Gráficos" />
         </figure>
         <article className="text d-df d-rw d-wp d-jcb d-aic">
-          <section className="df cl d-df d-rw d-wp d-jce d-aic bannerText">
-            <figure className="df jcc mobile">
-              <img src={iso} alt="iso9001"/>
-            </figure>
-            <figure className="df jcc">
-              <img src={fsc} alt="fsc"/>
-            </figure>
+          <section className="df cl d-df d-rw d-wp d-jcb d-aic bannerTextUp">
+            <p>Somos una empresa en constante <b>crecimiento</b></p>
+          </section>
+          <section className="df cl d-df d-rw d-wp d-jcb d-aic bannerText">
+            <article className="df rw wp jcc aic">
+              <figure className="df jcc mobile">
+                <img src={iso} alt="iso9001"/>
+              </figure>
+              <figure className="df jcc">
+                <img src={fsc} alt="fsc"/>
+              </figure>
+            </article>
+            <article className="df cl d-df d-rw d-wp d-jcc d-aic contacto">
+              <Link to={"/contacto"}><i class="fa-solid fa-paper-plane"></i> Contáctenos</Link>
+            </article>
           </section>
         </article>
       </section>
-      <section className="df cl d-df d-rw d-wp d-jcc d-aic contacto">
-        <Link to={"/contacto"}>Contáctenos</Link>
-      </section>
+      
       <Carousel
         slides={[trespatitos, crysf, starbucks, quaker, burgerking, quickfood, celusal]}
         velocity={1000}

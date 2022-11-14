@@ -22,6 +22,12 @@
     display: none
 }
 
+.calidad .calidadBox {
+    width: 70%;
+    border: solid .1rem #131E29;
+    padding: 1rem;
+}
+
 @media screen and (min-width: 1200px) {
 
     .calidad .mobile {
@@ -44,5 +50,10 @@
         width: 30%
     }
 
-
+    .calidad .calidadBox {
+        width: 50%;
+        border: solid .2rem #131E29;
+        line-height: 1.5rem;
+    }
+    
 } 

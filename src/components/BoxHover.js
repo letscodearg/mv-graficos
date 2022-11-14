@@ -17,6 +17,8 @@ const Box = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
   img {
     width: 100%;
     height: 100%;

@@ -47,7 +47,8 @@
         cursor: pointer;
         width: auto;
         transition: all 0.5s ease-in-out;
-        font-weight: bold;
+        font-weight: bold; 
+        font-size: .9rem;
     }
 
     .menuItem:hover {

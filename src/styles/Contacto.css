@@ -1,7 +1,6 @@
 .contacto form {
     font-weight: bold;
     width: 100vw;
-
 }
 
 .contacto form label {
@@ -26,6 +25,7 @@
    text-transform: uppercase;
    font-weight: bold;
    margin-bottom: 1rem;
+   font-family: 'Josefin Slab', serif;
 }
 
 .contacto form fieldset input, .contacto form fieldset textarea {
@@ -43,12 +43,11 @@
 
 .contacto .link {
     text-decoration: none;
-    color: snow;
     margin-left: 1rem;
 }
 
 .contacto a {
-    color: snow;
+    color: #131E29;
 }
 
 .fa-linkedin {
@@ -81,7 +80,7 @@ main iframe{
     }
 
     .contacto form button:hover {
-        background-color: grey;
+        background-color: #131E29;
         color: snow;
         transition: all 0.5s ease-in-out;
      }
