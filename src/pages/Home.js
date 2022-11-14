@@ -4,11 +4,13 @@ import imgHome from "../assets/home/imgHome.jpg";
 import iso from '../assets/calidad/iso.jpg';
 import fsc from '../assets/calidad/fsc.png';
 import { Carousel } from "../components/Carousel";
-import celusal from "../assets/clients/celusal.png";
+import trespatitos from "../assets/clients/trespatitos.png";
 import crysf from "../assets/clients/crysf.png";
-import maped from "../assets/clients/maped.png";
+import starbucks from "../assets/clients/starbucks.png";
 import quaker from "../assets/clients/quaker.png";
-import burgerking from "../assets/clients/burgerking.png"
+import burgerking from "../assets/clients/burgerking.png";
+import quickfood from "../assets/clients/quickfood.png";
+import celusal from "../assets/clients/celusal.png"
 
 function Home() {
   return (
@@ -32,7 +34,7 @@ function Home() {
         <Link to={"/contacto"}>Contáctenos</Link>
       </section>
       <Carousel
-        slides={[celusal, crysf, maped, quaker, burgerking, celusal]}
+        slides={[trespatitos, crysf, starbucks, quaker, burgerking, quickfood, celusal]}
         velocity={1000}
         interval={5000}
         height={"5rem"}

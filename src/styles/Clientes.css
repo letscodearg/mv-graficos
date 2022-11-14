@@ -13,11 +13,14 @@
     }
 
     .clients .clientsBox {
-        width: 70%
+        width: 60%
     }
     
     .clients section img{
-        width: 13%
+        width: 15%;
+        margin: 1.5rem;
+        transform: scale(1);
+        transition: all 0.5s ease-in-out;
     }
 
     .clients section img:hover{
@@ -25,17 +28,4 @@
         transition: all 0.5s ease-in-out;
     }
 
-/*     main article{
-        width: 60%;
-        margin-top: 1rem;
-    }
-
-    main section {
-        width: 100%;
-    }
-
-    main .box {
-        width: 40%;
-        margin: 2rem 0.5rem 3rem .5rem;
-    } */
 } 
