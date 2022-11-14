@@ -1,6 +1,6 @@
 import '../styles/Calidad.css';
 import iso from '../assets/calidad/iso.jpg';
-import fsc from '../assets/calidad/fsc.jpg';
+import fsc from '../assets/calidad/fsc.png';
 
 function Calidad() {
   return (
@@ -38,10 +38,10 @@ function Calidad() {
             de los alimentos. Con el fin de cumplir con este compromiso y con el proceso de la mejora continua.
           </p>
           <figure className="df jcc mobile">
-            <img src={iso} alt="iso9001"/>
+            <img src={iso} alt="iso9001" id="iso"/>
           </figure>
           <figure className="df jcc">
-            <img src={fsc} alt="fsc"/>
+            <img src={fsc} alt="fsc" id="fsc"/>
           </figure>
       </section>
     </main>

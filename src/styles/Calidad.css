@@ -35,8 +35,14 @@
     .calidad figure{
         width: 20%
     }
-    
+
     .calidad figure img{
-        width: 40%
+        width: 50%
     }
+    
+    .calidad figure img#fsc{
+        width: 30%
+    }
+
+
 } 

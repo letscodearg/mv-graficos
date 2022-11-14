@@ -2,7 +2,7 @@ import "../styles/Home.css";
 import { Link } from "react-router-dom";
 import imgHome from "../assets/home/imgHome.jpg";
 import iso from '../assets/calidad/iso.jpg';
-import fsc from '../assets/calidad/fsc.jpg';
+import fsc from '../assets/calidad/fsc.png';
 import { Carousel } from "../components/Carousel";
 import celusal from "../assets/clients/celusal.png";
 import crysf from "../assets/clients/crysf.png";
