@@ -1,26 +1,24 @@
 footer {
+    padding-top: 2rem;
     margin-top: 5rem;
 }
 
-footer section {
+footer section article {
     width: 90%;
 }
 
 #footer {
-    background-color: #E4002B;
+    background-color: #131E29;
     color: snow;
     width: 100%;
 }
 
 footer h2 {
     width: 100%;
-    text-align: center;
     text-transform: uppercase;
     font-size: 1.3rem;
-}
-
-footer i {
-    margin-right: .5rem;
+    text-align: center;
+    margin: 2rem 0;
 }
 
 footer .link {
@@ -28,23 +26,58 @@ footer .link {
     text-decoration: none;
 }
 
-footer p {
+footer p, footer a {
     text-align: center;
 }
 
-footer input {
-    border-radius: 1rem;
-    border: none;
-    padding: .5rem;
+footer a {
+    line-height: 1.5rem;
 }
 
-button {
-    border: none;
-    background-color: transparent;
+footer .fa-linkedin {
+    color: snow;
+}
+
+#copyright {
+    border-top: .1rem solid snow;
+    margin-top: 3rem
+}
+
+footer #copyright p {
+    width: 40%;
+}
+
+footer #copyright a {
+    width: 40%;
+    text-align: right;
+    color: snow;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1200px) {
-    footer section {
-        width: 30%
+    footer section article{
+        width: 20%
+    }
+
+    footer h2 {
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    footer p, footer a {
+        text-align: left;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    footer a {
+        line-height: 1.8rem;
+    }
+
+    footer a:hover {
+        color: #E4002B;
+        transition: all 0.5s ease-in-out;
     }
 }
