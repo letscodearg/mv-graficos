@@ -1,5 +1,4 @@
 import "../styles/Home.css";
-import { Link } from "react-router-dom";
 import imgHome from "../assets/home/imgHome.jpg";
 import iso from '../assets/calidad/iso.jpg';
 import fsc from '../assets/calidad/fsc.png';
@@ -10,7 +9,7 @@ import starbucks from "../assets/clients/starbucks.png";
 import quaker from "../assets/clients/quaker.png";
 import burgerking from "../assets/clients/burgerking.png";
 import quickfood from "../assets/clients/quickfood.png";
-import celusal from "../assets/clients/celusal.png"
+import celusal from "../assets/clients/celusal.png";
 
 function Home() {
   return (
@@ -20,25 +19,15 @@ function Home() {
           <img src={imgHome} alt="MV Gráficos" />
         </figure>
         <article className="text d-df d-rw d-wp d-jcb d-aic">
-          <section className="df cl d-df d-rw d-wp d-jcb d-aic bannerTextUp">
-            <p>Somos una empresa en constante <b>crecimiento</b></p>
-          </section>
           <section className="df cl d-df d-rw d-wp d-jcb d-aic bannerText">
-            <article className="df rw wp jcc aic">
-              <figure className="df jcc mobile">
-                <img src={iso} alt="iso9001"/>
-              </figure>
-              <figure className="df jcc">
-                <img src={fsc} alt="fsc"/>
-              </figure>
-            </article>
-            <article className="df cl d-df d-rw d-wp d-jcc d-aic contacto">
-              <Link to={"/contacto"}><i class="fa-solid fa-paper-plane"></i> Contáctenos</Link>
+            <p>Somos una empresa en constante <b>crecimiento</b></p>
+            <article className="df rw wp jce ais">
+                <img src={iso} alt="iso9001" id="iso"/>
+                <img src={fsc} alt="fsc" id="fsc"/>
             </article>
           </section>
         </article>
       </section>
-      
       <Carousel
         slides={[trespatitos, crysf, starbucks, quaker, burgerking, quickfood, celusal]}
         velocity={1000}
