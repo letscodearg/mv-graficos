@@ -19,6 +19,7 @@ const Box = styled.section`
   justify-content: center;
   transform: scale(1);
   transition: all 0.5s ease-in-out;
+  margin: 1rem;
   img {
     width: 100%;
     height: 100%;
@@ -47,12 +48,14 @@ const Text = styled.h2`
   color: snow;
   background-color: #E4002B;
   z-index: 2;
-  padding: 1rem 0.5rem;
+  padding: 1rem .75rem;
   text-transform: uppercase;
   font-family: sans-serif;
   position: absolute;
-  top: 50%;
-
+  top: 1rem;
+  line-height: 1.8rem;
+  font-size: 1rem;
+  width: 80%;
   @media screen and (min-width: 1200px) {
     opacity: 0;
     transition: all 0.5s ease-in-out;
