@@ -38,7 +38,7 @@ function Header() {
                 className={menu} />
         </section>
         <section id="desktop" className="df rw wp jca aic">
-            <Link to='/' id="logo">
+            <Link to='/' id="logo" className="df rw wp jcc aic">
                 <img src={logo}  alt="logo" className="logo df jcc"/>
             </Link>
             <Nav links={

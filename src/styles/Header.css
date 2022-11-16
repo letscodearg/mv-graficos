@@ -43,11 +43,15 @@ header #desktop {
 
     header #desktop {
         display: flex;
+        margin-top: 1rem;
     } 
 
     header #logo img{
         width: 100%
     }
     
-    
+    .logo {
+        margin-top: 0;
+        width: 80%
+    }
 }

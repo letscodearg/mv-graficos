@@ -69,4 +69,8 @@
     width: 12%;
     margin: 0 2rem 0 2rem
   }
+
+  #banner .imgHome img {
+    margin-top: 0;
+  }
 }
