@@ -7,16 +7,16 @@ function Footer() {
         <section className="df rw wp jca ais">
             <article className="df cl wp">
                 <h2>Secciones</h2>
-                <Link to="/lineas" className="link">Nosotros</Link>
-                <Link to="/equipamiento" className="link">Líneas de Productos</Link>
-                <Link to="/calidad" className="link">Equipamiento</Link>
-                <Link to="/clientes" className="link">Política de Calidad</Link>
-                <Link to="/contacto" className="link">Nuestros Clientes</Link>
-                <Link to="/lineas" className="link">Contacto</Link>
+                <Link to="/nosotros" className="link">Nosotros</Link>
+                <Link to="/lineas" className="link">Líneas de Productos</Link>
+                <Link to="/equipamiento" className="link">Equipamiento</Link>
+                <Link to="/calidad" className="link">Política de Calidad</Link>
+                <Link to="/clientes" className="link">Nuestros Clientes</Link>
+                <Link to="/contacto" className="link">Contacto</Link>
             </article>
             <article className="df cl wp jcc aic">
                 <h2>Contacto</h2>
-                    <Link className="link">info@mv-graficos.com.ar</Link>
+                    <a href="mailto:info@mv-graficos.com.ar">info@mv-graficos.com.ar</a>
                     <p>011-4844-6713 / 0330</p>
                     <p>Lacroze 5833, Billinghurst <br/> Provincia de Buenos Aires, Argentina</p>
             </article>

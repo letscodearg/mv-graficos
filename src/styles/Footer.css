@@ -32,6 +32,8 @@ footer p, footer a {
 
 footer a {
     line-height: 1.5rem;
+    color: snow;
+    text-decoration: none;
 }
 
 footer .fa-linkedin {
