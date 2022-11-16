@@ -18,9 +18,9 @@
   display: flex;
   position: absolute;
   bottom: 3rem;
-  left: 0;
-  background-color: #131E29;
-  color: snow;
+  left: 1rem;
+  background-color: snow;
+  color: #E4002B;
   width: 90%;
 /*   border-radius: 0 2rem 2rem 0; */
 }
