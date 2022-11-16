@@ -68,7 +68,7 @@ li::before {
 
 @media screen and (min-width: 1200px) {
     main {
-        margin: 1rem  0;
+        margin: 1.5em  0;
     }
 
     main article.article{
@@ -90,9 +90,10 @@ li::before {
     
     main h1{
         width: 30%;
-        background-color: #131E29;
-        color: snow;
-        padding: 1rem;
-        border-radius: 0 3rem 3rem 0;
+        color: #E4002B;
+        text-align: right;
+        font-weight: bold;
+        border-bottom: .15rem solid #E4002B;
+        padding-bottom: .2rem
     }
 }
