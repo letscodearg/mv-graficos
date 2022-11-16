@@ -51,6 +51,21 @@ h2 {
     text-align: center;
 }
 
+li {
+    list-style: none;
+}
+
+li::before {
+
+    content: "\2022";
+      
+    color: #E4002B;
+      
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
 @media screen and (min-width: 1200px) {
     main {
         margin: 1rem  0;
@@ -75,7 +90,7 @@ h2 {
     
     main h1{
         width: 30%;
-        background-color: #E4002B;
+        background-color: #131E29;
         color: snow;
         padding: 1rem;
         border-radius: 0 3rem 3rem 0;

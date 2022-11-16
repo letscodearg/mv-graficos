@@ -30,8 +30,8 @@ function Calidad() {
       <section className="df rw wp jcc aic">
           <p className="alignCenter calidadBox">
             <b>MV Gráficos S.A.</b> <br/>
-            ha decidido alinearse y cumplir con los requisitos aplicables de las Normas <b>ISO 9001:2015</b> 
-            de Sistemas Gestion de la Calidad, <b>FSC de Cadena de Custodia</b> y <b>FSSC 22000:2018</b> de Sistemas de gestion de la inocuidad 
+            ha decidido alinearse y cumplir con los requisitos aplicables de las Normas ISO 9001:2015 
+            de Sistemas Gestion de la Calidad, FSC de Cadena de Custodia y FSSC 22000:2018 de Sistemas de gestion de la inocuidad 
             de los alimentos. Con el fin de cumplir con este compromiso y con el proceso de la mejora continua.
           </p>
       </section>

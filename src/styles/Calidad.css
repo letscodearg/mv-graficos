@@ -54,6 +54,15 @@
         width: 50%;
         border: solid .2rem #131E29;
         line-height: 1.5rem;
+        transform: scale(1);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .calidad .calidadBox:hover {
+        background-color: #131E29;
+        color: snow;
+        transform: scale(1.05);
+        transition: all 0.5s ease-in-out;
     }
     
 } 
