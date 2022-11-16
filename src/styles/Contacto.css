@@ -26,6 +26,7 @@
    font-weight: bold;
    margin-bottom: 1rem;
    font-family: 'Josefin Slab', serif;
+   border: none
 }
 
 .contacto form fieldset input, .contacto form fieldset textarea {
@@ -78,6 +79,10 @@ main iframe{
         margin-bottom: 2rem;
         outline: none;
     }
+
+    .contacto form button {
+        transition: all 0.5s ease-in-out;
+     }
 
     .contacto form button:hover {
         background-color: #131E29;
