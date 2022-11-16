@@ -123,7 +123,7 @@ function Contacto() {
         <article className="df wp rw jcc aic box">
           <section className="df rw wp jcc aic">
             <i className="fa-solid fa-envelope"></i>
-            <Link className="link">info@mv-graficos.com.ar</Link>
+            <a href="mailto:info@mv-graficos.com.ar">info@mv-graficos.com.ar</a>
           </section>
           <section className="df rw wp jcc aic">
             <i className="fa-solid fa-phone"></i>

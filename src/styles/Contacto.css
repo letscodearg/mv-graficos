@@ -43,12 +43,13 @@
 }
 
 .contacto .link {
-    text-decoration: none;
     margin-left: 1rem;
 }
 
 .contacto a {
     color: #131E29;
+    text-decoration: none;
+    margin-left: 1rem;
 }
 
 .fa-linkedin {
