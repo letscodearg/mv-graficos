@@ -28,11 +28,12 @@ const Box = styled.section`
   }
 
   @media screen and (min-width: 1200px) {
-    width: 10%;
+    width: 25%;
     cursor: pointer;
+    margin: 1rem;
     &:hover {
         z-index: 2;
-        transform: scale(2);
+        transform: scale(1.2);
         transition: all 0.5s ease-in-out;
       h2 {
         z-index: 2;
@@ -43,10 +44,10 @@ const Box = styled.section`
   }
 `;
 const Text = styled.h2`
-  color: #fafafa;
-  background-color: #df001f;
+  color: snow;
+  background-color: #E4002B;
   z-index: 2;
-  padding: 1rem 0.25rem;
+  padding: 1rem 0.5rem;
   text-transform: uppercase;
   font-family: sans-serif;
   position: absolute;
@@ -55,12 +56,12 @@ const Text = styled.h2`
   @media screen and (min-width: 1200px) {
     opacity: 0;
     transition: all 0.5s ease-in-out;
-    top: 0;
+    top: 1rem;
     margin: 0;
-    font-size: .5rem;
+    font-size: .8rem;
     width: 80%;
     padding: .5rem;
-    line-height: .8rem;
+    line-height: 1.5rem;
   }
 `;
 

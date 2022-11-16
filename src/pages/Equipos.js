@@ -12,6 +12,7 @@ function Equipos() {
     <main className="main df wp rw jcc aic d-cl equipos">
       <section className="main d-df d-rw d-wp d-jcb d-ais">
         <h1>Equipamiento</h1>
+        <section className="df cl jcc aic d-rw d-wp d-jcc" >
         <article className="df cl jcc aic d-rw d-wp d-jcc" id="equipos-galery">
           <BoxHover
             src={equipo1}
@@ -41,6 +42,8 @@ function Equipos() {
             altText="texto para cuadro"
           />
         </article>
+        </section>
+
       </section>
     </main>
   );
