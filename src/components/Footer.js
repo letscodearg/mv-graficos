@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import '../styles/Footer.css';
+import letscode from '../assets/letscode.svg';
 
 function Footer() {
   return (
@@ -33,7 +34,7 @@ function Footer() {
         </section>
         <section className="df rw wp jca aic" id="copyright">
             <p>© Copyright 2022 – MV Gráficos</p>
-            <a href="http://letscode.com.ar">Lets Code</a>
+            <a href="http://letscode.com.ar"><img src={letscode} alt="Lets Code"/></a>
         </section>
     </footer>
   );

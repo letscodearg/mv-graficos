@@ -56,6 +56,11 @@ footer #copyright a {
     text-decoration: none;
 }
 
+footer img {
+    width: 5%;
+    padding: .5rem
+}
+
 @media screen and (min-width: 1200px) {
     footer section article{
         width: 20%
