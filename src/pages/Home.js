@@ -31,7 +31,7 @@ function Home() {
       <Carousel
         slides={[trespatitos, crysf, starbucks, quaker, burgerking, quickfood, celusal]}
         velocity={1000}
-        interval={5000}
+        interval={2000}
         height={"5rem"}
       />
     </main>
