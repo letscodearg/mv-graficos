@@ -32,10 +32,25 @@ const Box = styled.section`
     width: 25%;
     cursor: pointer;
     margin: 1rem;
+    &::before {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        position: absolute;
+        opacity: 0;
+        transition: all 0.3s;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        }
     &:hover {
-        z-index: 2;
-        transform: scale(1.2);
-        transition: all 0.5s ease-in-out;
+      z-index: 2;
+      transform: scale(1.2);
+      transition: all 0.5s ease-in-out;
+      &::before {
+        opacity: .7;
+      }
       h2 {
         z-index: 2;
         opacity: 1;
@@ -65,6 +80,8 @@ const Text = styled.h2`
     width: 80%;
     padding: .5rem;
     line-height: 1.5rem;
+    color: snow;
+    background-color: transparent;
   }
 `;
 
