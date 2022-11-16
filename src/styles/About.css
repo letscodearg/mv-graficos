@@ -5,3 +5,22 @@
 .about .box h2{
     margin: 0
 }
+
+
+@media screen and (min-width: 1200px) {
+    .about .box {
+        transform: scale(1);
+        transition: all 0.5s ease-in-out;
+        margin-top: 2rem;
+    }
+
+
+    .about .box:hover {
+        background-color: #131E29;
+        color: snow;
+        transform: scale(1.05);
+        transition: all 0.5s ease-in-out;
+    }
+
+}
+
