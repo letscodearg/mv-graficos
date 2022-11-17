@@ -25,7 +25,7 @@
 /*   border-radius: 0 2rem 2rem 0; */
 }
 
-#banner .bannerText p{
+#banner .bannerText a{
   font-size: 1rem;
   margin-left: 1rem;
   text-transform: uppercase;
@@ -34,6 +34,8 @@
   line-height: 2rem;
   padding: .2rem;
   font-family: 'Josefin Slab', serif;
+  text-decoration: none;
+  color: #E4002B
 }
 
 #banner .bannerText article{
@@ -47,18 +49,35 @@
 
 @media screen and (min-width: 1200px) {
   #banner .bannerText {
-    bottom: 20%;
-    width: 65%;
+    bottom: 60%;
+    width: 80%;
     padding-bottom:2rem;
-    padding-right: 2rem
+    padding-right: 2rem;
+    transform: scale(1);
+    background-color: snow;
+    transition: all 0.5s ease-in-out;
+    left: 3rem;
+    cursor: pointer;
   }
 
-  #banner .bannerText p{
-    font-size: 3rem;
+  #banner .bannerText:hover {
+    background-color: #E4002B;
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+  }
+
+  #banner .bannerText:hover a{
+    color: snow;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #banner .bannerText a{
+    font-size: 2.5rem;
     margin-left: 1rem;
-    width: 80%;
-    line-height: 5rem;
-    padding: 2.5rem 0 0 2.5rem ;
+    width: 100%;
+    line-height: 4.5rem;
+    padding: 1.5rem 0 0 1.5rem ;
+    font-weight: bold;
   }
 
   #banner .bannerText article{
@@ -66,8 +85,8 @@
   }
   
   #banner .bannerText article img{
-    width: 12%;
-    margin: 0 2rem 0 2rem
+    width: 10%;
+    margin: 0 1rem 0 1rem
   }
 
   #banner .imgHome img {

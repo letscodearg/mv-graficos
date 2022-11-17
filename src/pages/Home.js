@@ -10,6 +10,7 @@ import quaker from "../assets/clients/quaker.png";
 import burgerking from "../assets/clients/burgerking.png";
 import quickfood from "../assets/clients/quickfood.png";
 import celusal from "../assets/clients/celusal.png";
+import {Link} from "react-router-dom";
 
 function Home() {
   return (
@@ -20,11 +21,11 @@ function Home() {
         </figure>
         <article className="text d-df d-rw d-wp d-jcb d-aic">
           <section className="df cl d-df d-rw d-wp d-jcb d-aic bannerText">
-            <p>Somos una empresa en constante <b>crecimiento</b></p>
-            <article className="df rw wp jce ais">
+            <Link to="/nosotros"> Más de 15 años de experiencia en el mercado de envases</Link>
+{/*             <article className="df rw wp jce ais">
                 <img src={iso} alt="iso9001" id="iso"/>
                 <img src={fsc} alt="fsc" id="fsc"/>
-            </article>
+            </article> */}
           </section>
         </article>
       </section>
