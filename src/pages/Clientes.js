@@ -15,6 +15,13 @@ import todoenvase from "../assets/clients/todoenvase.png";
 import mccain from "../assets/clients/mccain.png";
 import bonafide from "../assets/clients/bonafide.png";
 import necho from "../assets/clients/necho.png";
+import drmadaus from "../assets/clients/drmadaus.png";
+import pizzazen from "../assets/clients/pizzazen.png";
+import ciaber from "../assets/clients/ciaber.png";
+import res from "../assets/clients/res.png";
+import yolybell from "../assets/clients/yolybell.png";
+import darnel from "../assets/clients/darnel.png";
+import ladolce from "../assets/clients/ladolce.png";
 
 function Clientes() {
   return (
@@ -23,22 +30,29 @@ function Clientes() {
         <h1>Nuestros Clientes</h1>
       </section>
       <section className="df rw wp jca aic clientsBox">
-          <img src={santamaria}  alt="logo" />
-          <img src={trespatitos}  alt="logo" />
-          <img src={antex}  alt="logo" />
-          <img src={quaker}  alt="logo" />
-          <img src={burgerking}  alt="logo" />
-          <img src={starbucks}  alt="logo" />
-          <img src={crysf}  alt="logo" />
-          <img src={maped}  alt="logo" />
-          <img src={quickfood}  alt="logo" />
-          <img src={todoenvase}  alt="logo" />
-          <img src={simplot}  alt="logo" />
-          <img src={compañiaamericana}  alt="logo" />
-          <img src={celusal}  alt="logo" />
-          <img src={mccain}  alt="logo" />
-          <img src={bonafide}  alt="logo" />
-          <img src={necho}  alt="logo" />
+          <img src={santamaria}  alt="Santa María" />
+          <img src={trespatitos}  alt="Tres Patitos" />
+          <img src={antex}  alt="Antex" />
+          <img src={quaker}  alt="Quaker" />
+          <img src={burgerking}  alt="Burger King" />
+          <img src={starbucks}  alt="Starbucks" />
+          <img src={crysf}  alt="CRYSF" />
+          <img src={maped}  alt="Maped" />
+          <img src={quickfood}  alt="Quickfood" />
+          <img src={todoenvase}  alt="Todo Envase" />
+          <img src={simplot}  alt="Simplot" />
+          <img src={compañiaamericana}  alt="Compañia Americana" />
+          <img src={celusal}  alt="Celusal" />
+          <img src={mccain}  alt="MC Cain" />
+          <img src={bonafide}  alt="Bonafide" />
+          <img src={necho}  alt="Necho" />
+          <img src={drmadaus}  alt="Dr Madaus" />
+          <img src={pizzazen}  alt="Pizza Zen" />
+          <img src={ciaber}  alt="Compañia Bernal" />
+          <img src={res}  alt="Res" />
+          <img src={yolybell}  alt="Yoly Bell" />
+          <img src={darnel}  alt="La Pilarica" />
+          <img src={ladolce}  alt="La Dolce" />
       </section>
     </main>
   );

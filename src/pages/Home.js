@@ -21,7 +21,7 @@ function Home() {
         </figure>
         <article className="text d-df d-rw d-wp d-jcb d-aic">
           <section className="df cl d-df d-rw d-wp d-jcb d-aic bannerText">
-            <Link to="/nosotros"> Más de 15 años de experiencia en el mercado de envases</Link>
+            <Link to="/nosotros">CALIDAD Y SERVICIO EN ESTUCHES DE CARTULINA Y MICROCORRUGADO</Link>
 {/*             <article className="df rw wp jce ais">
                 <img src={iso} alt="iso9001" id="iso"/>
                 <img src={fsc} alt="fsc" id="fsc"/>
