@@ -10,7 +10,7 @@ function Products() {
   return (
     <main className="df wp rw jcc aic"> 
       <section className="main d-df d-rw d-wp d-jcb d-ais">
-        <h1>Línea de Productos</h1>
+        <h1>Líneas de Productos</h1>
         <article className="article">
             <p>Todos los productos se realizan con un alto estándar de calidad y con una alta capacidad de respuesta ante las necesidades de nuestros clientes.</p>
             <p>Realizamos estuches en cartulina Duplex o Triplex en cualquier gramaje y formato, tanto de fondo automático, fondo americano o pegado lateral.</p>

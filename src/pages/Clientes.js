@@ -22,6 +22,7 @@ import res from "../assets/clients/res.png";
 import yolybell from "../assets/clients/yolybell.png";
 import darnel from "../assets/clients/darnel.png";
 import ladolce from "../assets/clients/ladolce.png";
+import anchor from "../assets/clients/anchor.png";
 
 function Clientes() {
   return (
@@ -53,6 +54,7 @@ function Clientes() {
           <img src={yolybell}  alt="Yoly Bell" />
           <img src={darnel}  alt="La Pilarica" />
           <img src={ladolce}  alt="La Dolce" />
+          <img src={anchor}  alt="Anchor Packaging" />
       </section>
     </main>
   );
