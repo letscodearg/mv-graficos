@@ -1,5 +1,5 @@
 import "../styles/Contacto.css";
-import { Link, redirect } from "react-router-dom";
+import { redirect } from "react-router-dom";
 import Iframe from "react-iframe";
 import { useState } from "react";
 import axios from "axios";
@@ -105,7 +105,9 @@ function Contacto() {
             <label htmlFor="msg">Mensaje</label>
             <textarea name="msg" value={values.msg} onChange={changeValues} />
           </fieldset>
-          <button type="submit"><i class="fa-solid fa-paper-plane"></i>  Enviar</button>
+          <button type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Enviar
+          </button>
         </form>
       </section>
       <section className="df wp rw jcc aic d-aist">

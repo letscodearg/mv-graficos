@@ -5,7 +5,7 @@ const BoxHover = ({ src, text }) => {
   return (
     <>
       <Box>
-        <img src={src} alt={`box image ${text}`} />
+        <photo src={src} alt={`box image ${text}`} />
         <Text>{text}</Text>
       </Box>
     </>
@@ -20,7 +20,7 @@ const Box = styled.section`
   transform: scale(1);
   transition: all 0.5s ease-in-out;
   margin: 1rem;
-  img {
+  photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -33,23 +33,23 @@ const Box = styled.section`
     cursor: pointer;
     margin: 1rem;
     &::before {
-        content: " ";
-        width: 100%;
-        height: 100%;
-        background: #000;
-        position: absolute;
-        opacity: 0;
-        transition: all 0.3s;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        }
+      content: " ";
+      width: 100%;
+      height: 100%;
+      background: #000;
+      position: absolute;
+      opacity: 0;
+      transition: all 0.3s;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
     &:hover {
       z-index: 2;
       transform: scale(1.2);
       transition: all 0.5s ease-in-out;
       &::before {
-        opacity: .7;
+        opacity: 0.7;
       }
       h2 {
         z-index: 2;
@@ -61,9 +61,9 @@ const Box = styled.section`
 `;
 const Text = styled.h2`
   color: snow;
-  background-color: #E4002B;
+  background-color: #e4002b;
   z-index: 2;
-  padding: 1rem .75rem;
+  padding: 1rem 0.75rem;
   text-transform: uppercase;
   font-family: sans-serif;
   position: absolute;
@@ -76,9 +76,9 @@ const Text = styled.h2`
     transition: all 0.5s ease-in-out;
     top: 1rem;
     margin: 0;
-    font-size: .8rem;
+    font-size: 0.8rem;
     width: 80%;
-    padding: .5rem;
+    padding: 0.5rem;
     line-height: 1.5rem;
     color: snow;
     background-color: transparent;
