@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-const CallToAction = ({ image, children, link }) => {
+const CallToAction = ({ image, children, link, text }) => {
   return (
     <Container>
       <Cover>
@@ -9,7 +9,7 @@ const CallToAction = ({ image, children, link }) => {
       </Cover>
       <Action>
         {children}
-        <Link to={link}>ver más</Link>
+        <Link to={link}>{text}</Link>
       </Action>
     </Container>
   );

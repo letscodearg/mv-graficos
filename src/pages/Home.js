@@ -13,7 +13,7 @@ import CallToAction from "../components/CallToAction";
 function Home() {
   return (
     <main className="df wp rw jcc aic home">
-      <CallToAction image={imgHome} link="/nosotros">
+      <CallToAction image={imgHome} link="/nosotros" text="conocé más">
         <h2>La mejor calidad y servicio</h2>
         <p>En estuches de cartulina y microcorrugado</p>
       </CallToAction>
