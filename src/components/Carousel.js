@@ -12,7 +12,7 @@ const Carousel = ({
   useEffect(() => {
     const autoplay = (velocity = 500) => {
       let galery = galeria.current;
-      let slides = galery.children;
+      let slides = galery ? galery.children : [];
       if (slides.length < 0) return false;
       let firstSlide = slides[0];
       galery.style.transition = `${velocity}ms ease-out all`;
