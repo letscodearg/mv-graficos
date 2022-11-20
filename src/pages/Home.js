@@ -8,7 +8,6 @@ import quaker from "../assets/clients/quaker.png";
 import burgerking from "../assets/clients/burgerking.png";
 import quickfood from "../assets/clients/quickfood.png";
 import celusal from "../assets/clients/celusal.png";
-import { Link } from "react-router-dom";
 import CallToAction from "../components/CallToAction";
 function Home() {
   return (
