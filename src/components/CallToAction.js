@@ -23,6 +23,7 @@ const Container = styled.section`
   justify-content: flex-start;
   align-items: center;
   @media screen and (max-width: 1280px) {
+
   }
 `;
 const Cover = styled.figure`
@@ -77,6 +78,7 @@ const Action = styled.article`
     opacity: 1;
     transition: all 1s;
     text-align: right;
+    color: snow;
   }
   p {
     font-size: 1rem;
@@ -84,6 +86,7 @@ const Action = styled.article`
     font-weight: 300;
     opacity: 1;
     transition: all 1s;
+    color: snow;
   }
   a {
     text-decoration: none;
@@ -97,7 +100,7 @@ const Action = styled.article`
     text-transform: uppercase;
   }
   &:hover {
-    background-color: rgba(240, 240, 240, 1);
+    background-color: snow;
     &::before {
       right: 105%;
       background-color: rgba(228, 0, 42, 1);
@@ -106,6 +109,7 @@ const Action = styled.article`
     h3,
     p {
       opacity: 1;
+      color: #131E29;
     }
   }
   @media screen and (max-width: 1280px) {

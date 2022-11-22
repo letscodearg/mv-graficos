@@ -61,6 +61,18 @@ footer img {
     padding: .5rem
 }
 
+#calidad {
+    border-top: solid .1rem snow;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+#calidad img {
+    width: 25%;
+    margin: .5rem;
+}
+
+
 @media screen and (min-width: 1200px) {
     footer section article{
         width: 20%

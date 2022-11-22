@@ -1,6 +1,8 @@
 import {Link} from 'react-router-dom'
 import '../styles/Footer.css';
 import letscode from '../assets/letscode.svg';
+import iso from '../assets/calidad/iso.jpg';
+import fsc from '../assets/calidad/fsc.png';
 
 function Footer() {
   return (
@@ -30,7 +32,12 @@ function Footer() {
                 >
                 <i className="fa-brands fa-linkedin" />
                 </a>
+                <section className="df rw wp jce aic" id="calidad">
+                    <img src={iso} alt="iso9001" id="iso"/>
+                    <img src={fsc} alt="fsc" id="fsc"/>
+                </section>
             </article>
+
         </section>
         <section className="df rw wp jca aic" id="copyright">
             <p>© Copyright 2022 – MV Gráficos</p>

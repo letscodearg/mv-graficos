@@ -5,7 +5,7 @@ const BoxHover = ({ src, text }) => {
   return (
     <>
       <Box>
-        <photo src={src} alt={`box image ${text}`} />
+        <img src={src} alt={`box ${text}`} />
         <Text>{text}</Text>
       </Box>
     </>
@@ -20,7 +20,7 @@ const Box = styled.section`
   transform: scale(1);
   transition: all 0.5s ease-in-out;
   margin: 1rem;
-  photo {
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;

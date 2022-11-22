@@ -1,10 +1,20 @@
 import '../styles/Products.css';
 import { Carousel } from "../components/Carousel";
-import celusal from "../assets/clients/celusal.png";
-import crysf from "../assets/clients/crysf.png";
-import maped from "../assets/clients/maped.png";
-import quaker from "../assets/clients/quaker.png";
-import burgerking from "../assets/clients/burgerking.png"
+import trespatitos from "../assets/products/trespatitos.png";
+import billiken from "../assets/products/billiken.png";
+import elnoble from "../assets/products/elnoble.png";
+import celusal from "../assets/products/celusal.png";
+import paty from "../assets/products/paty.png";
+import quaker from "../assets/products/quaker.png";
+import kentucky from "../assets/products/kentucky.png";
+import fritzzio from "../assets/products/fritzzio.png";
+import pizzazen from "../assets/products/pizzazen.png";
+import santamaria from "../assets/products/santamaria.png";
+import madaus from "../assets/products/madaus.png";
+import martinez from "../assets/products/martinez.png";
+import mccain from "../assets/products/mccain.png";
+import nucha from "../assets/products/nucha.png";
+
 
 function Products() {
   return (
@@ -18,7 +28,21 @@ function Products() {
         </article>
       </section>
       <Carousel
-        slides={[celusal, crysf, maped, quaker, burgerking]}
+        slides={[trespatitos, 
+          billiken, 
+          elnoble, 
+          celusal, 
+          paty, 
+          quaker, 
+          kentucky, 
+          fritzzio, 
+          pizzazen,
+          santamaria,
+          madaus,
+          martinez,
+          mccain,
+          nucha
+        ]}
         velocity={1000}
         interval={5000}
         height={"10rem"}

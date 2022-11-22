@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "../styles/Equipos.css";
-import equipo1 from "../assets/equipos/equipo1.jpeg";
-import equipo2 from "../assets/equipos/equipo2.jpeg";
-import equipo3 from "../assets/equipos/equipo3.jpeg";
+import cortadora from "../assets/equipos/cortadora.jpeg";
+import impresion from "../assets/equipos/impresion.jpeg";
+import pegadora from "../assets/equipos/pegadora.jpeg";
+import troquelado from "../assets/equipos/troquelado.jpeg";
 import BoxHover from "../components/BoxHover";
 
 function Equipos() {
@@ -15,29 +16,29 @@ function Equipos() {
         <section className="df cl jcc aic d-rw d-wp d-jcc" >
         <article className="df cl jcc aic d-rw d-wp d-jcc" id="equipos-galery">
           <BoxHover
-            src={equipo1}
+            src={cortadora}
             text="Cortadora de bobinas y guillotina"
-            altText="texto para cuadro"
-            onClick={() => setActive("equipo1")}
-            show={active === "equipo1" ? true : false}
+            altText="Cortadora de bobinas y guillotina"
+            onClick={() => setActive("cortadora")}
+            show={active === "cortadora" ? true : false}
           />
           <BoxHover
-            src={equipo2}
+            src={impresion}
             text="Impresoras offset planas de 6 colores más barniz en línea"
-            altText="texto para cuadro"
+            altText="Impresoras offset planas de 6 colores más barniz en línea"
           />
           <BoxHover
-            src={equipo3}
+            src={troquelado}
             text="Troqueladoras con descartonado y separación de poses en tercera estación"
             altText="texto para cuadro"
           />
           <BoxHover
-            src={equipo1}
+            src={pegadora}
             text="Pegadoras automáticas para estuches de fondo armado, pegado lateral y 4 o 6 ángulos."
-            altText="texto para cuadro"
+            altText="Pegadoras automáticas para estuches de fondo armado, pegado lateral y 4 o 6 ángulos."
           />
           <BoxHover
-            src={equipo1}
+            src={pegadora}
             text="Horno para aplicación de Laca UV"
             altText="texto para cuadro"
           />
