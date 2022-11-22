@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/mv-graficos/static/css/main.f1188964.css",
+    "main.js": "/mv-graficos/static/js/main.ac8aa64f.js",
+    "static/js/787.a7455385.chunk.js": "/mv-graficos/static/js/787.a7455385.chunk.js",
+    "static/media/imgHome.jpg": "/mv-graficos/static/media/imgHome.0e1edc9f93112351ec7f.jpg",
+    "static/media/billiken.png": "/mv-graficos/static/media/billiken.fa3a64a9d70a53d1fb11.png",
+    "static/media/santamaria.png": "/mv-graficos/static/media/santamaria.2560ce73fa0344325265.png",
+    "static/media/quaker.png": "/mv-graficos/static/media/quaker.a147aa0cf5da7f48169a.png",
+    "static/media/pizzazen.png": "/mv-graficos/static/media/pizzazen.a4f9e2643c9b7e9b011a.png",
+    "static/media/fritzzio.png": "/mv-graficos/static/media/fritzzio.e55aeef67efdf1ac553c.png",
+    "static/media/madaus.png": "/mv-graficos/static/media/madaus.895ced04e68737857a6c.png",
+    "static/media/elnoble.png": "/mv-graficos/static/media/elnoble.43c8aa3c2fcf8e584fbc.png",
+    "static/media/mccain.png": "/mv-graficos/static/media/mccain.55196bf08583f14cb6a1.png",
+    "static/media/paty.png": "/mv-graficos/static/media/paty.4dbe3ad6f15f0f569140.png",
+    "static/media/nucha.png": "/mv-graficos/static/media/nucha.af3726480a64e452a420.png",
+    "static/media/kentucky.png": "/mv-graficos/static/media/kentucky.c49bbf81cdcc5f45d5bc.png",
+    "static/media/trespatitos.png": "/mv-graficos/static/media/trespatitos.a9849d199edafd97097d.png",
+    "static/media/celusal.png": "/mv-graficos/static/media/celusal.f93720c8e134e785507a.png",
+    "static/media/iso.jpg": "/mv-graficos/static/media/iso.a32dbb561e6bb0a6f9ec.jpg",
+    "static/media/pegadora.jpeg": "/mv-graficos/static/media/pegadora.230092d8e6d01e40ae07.jpeg",
+    "static/media/troquelado.jpeg": "/mv-graficos/static/media/troquelado.cfebb5272decea0d710b.jpeg",
+    "static/media/impresion.jpeg": "/mv-graficos/static/media/impresion.6352137928a78af8ee99.jpeg",
+    "static/media/cortadora.jpeg": "/mv-graficos/static/media/cortadora.90df937f9a1d50fe30a1.jpeg",
+    "static/media/fsc.png": "/mv-graficos/static/media/fsc.8c6fc966372f88a05c88.png",
+    "static/media/logo.svg": "/mv-graficos/static/media/logo.864cf951f34e70c25c953ccfbade32a3.svg",
+    "static/media/starbucks.png": "/mv-graficos/static/media/starbucks.eb6c427119dbee9648bc.png",
+    "static/media/ciaber.png": "/mv-graficos/static/media/ciaber.75f3befcb60e08a832d0.png",
+    "static/media/necho.png": "/mv-graficos/static/media/necho.61ff222d8f912737faa8.png",
+    "static/media/burgerking.png": "/mv-graficos/static/media/burgerking.3f5911164a7086a1ea74.png",
+    "static/media/letscode.svg": "/mv-graficos/static/media/letscode.0ba66909d178c7c47dc8f3e95edbe8c0.svg",
+    "index.html": "/mv-graficos/index.html",
+    "main.f1188964.css.map": "/mv-graficos/static/css/main.f1188964.css.map",
+    "main.ac8aa64f.js.map": "/mv-graficos/static/js/main.ac8aa64f.js.map",
+    "787.a7455385.chunk.js.map": "/mv-graficos/static/js/787.a7455385.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1188964.css",
+    "static/js/main.ac8aa64f.js"
+  ]
+}
