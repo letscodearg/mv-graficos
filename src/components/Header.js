@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import logo from "../assets/logo.svg";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";

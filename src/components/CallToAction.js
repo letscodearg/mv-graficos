@@ -5,7 +5,7 @@ const CallToAction = ({ image, children, link, text }) => {
   return (
     <Container>
       <Cover>
-        <img src={image} />
+        <img src={image} alt={`${image}`}/>
       </Cover>
       <Action>
         {children}
