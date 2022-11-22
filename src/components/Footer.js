@@ -41,7 +41,7 @@ function Footer() {
         </section>
         <section className="df rw wp jca aic" id="copyright">
             <p>© Copyright 2022 – MV Gráficos</p>
-            <a href="http://letscode.com.ar"><img src={letscode} alt="Lets Code"/></a>
+            <a href="http://letscode.com.ar" target="_blank" rel="noreferrer"><img src={letscode} alt="Lets Code"/></a>
         </section>
     </footer>
   );

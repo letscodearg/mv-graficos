@@ -11,7 +11,6 @@ import fritzzio from "../assets/products/fritzzio.png";
 import pizzazen from "../assets/products/pizzazen.png";
 import santamaria from "../assets/products/santamaria.png";
 import madaus from "../assets/products/madaus.png";
-import martinez from "../assets/products/martinez.png";
 import mccain from "../assets/products/mccain.png";
 import nucha from "../assets/products/nucha.png";
 
@@ -39,13 +38,14 @@ function Products() {
           pizzazen,
           santamaria,
           madaus,
-          martinez,
           mccain,
           nucha
         ]}
         velocity={1000}
         interval={5000}
-        height={"10rem"}
+        height={"12rem"}
+        mbWidth={"1000%"}
+        dkWidth={"350%"}
       />
     </main>
   );
