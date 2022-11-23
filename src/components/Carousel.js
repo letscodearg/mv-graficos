@@ -55,7 +55,10 @@ const Carousel = ({
 const Contenedor = styled.section`
   position: relative;
   overflow: hidden;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
+  @media screen and (max-width: 1280px) {
+    margin-top: 1rem;
+  }
 `;
 const Galeria = styled.div`
   display: flex;
