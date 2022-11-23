@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mv-graficos/static/css/main.f1188964.css",
-    "main.js": "/mv-graficos/static/js/main.8a92c820.js",
+    "main.js": "/mv-graficos/static/js/main.1b69c941.js",
     "static/js/787.a7455385.chunk.js": "/mv-graficos/static/js/787.a7455385.chunk.js",
     "static/media/imgHome.jpg": "/mv-graficos/static/media/imgHome.0e1edc9f93112351ec7f.jpg",
     "static/media/billiken.png": "/mv-graficos/static/media/billiken.fa3a64a9d70a53d1fb11.png",
@@ -23,7 +23,7 @@
     "static/media/impresion.jpeg": "/mv-graficos/static/media/impresion.6352137928a78af8ee99.jpeg",
     "static/media/cortadora.jpeg": "/mv-graficos/static/media/cortadora.90df937f9a1d50fe30a1.jpeg",
     "static/media/fsc.png": "/mv-graficos/static/media/fsc.8c6fc966372f88a05c88.png",
-    "static/media/logo.svg": "/mv-graficos/static/media/logo.864cf951f34e70c25c953ccfbade32a3.svg",
+    "static/media/logo.svg": "/mv-graficos/static/media/logo.51b4341f3d30407d0cdfc9398b0e2d38.svg",
     "static/media/starbucks.png": "/mv-graficos/static/media/starbucks.eb6c427119dbee9648bc.png",
     "static/media/ciaber.png": "/mv-graficos/static/media/ciaber.75f3befcb60e08a832d0.png",
     "static/media/necho.png": "/mv-graficos/static/media/necho.61ff222d8f912737faa8.png",
@@ -31,11 +31,11 @@
     "static/media/letscode.svg": "/mv-graficos/static/media/letscode.0ba66909d178c7c47dc8f3e95edbe8c0.svg",
     "index.html": "/mv-graficos/index.html",
     "main.f1188964.css.map": "/mv-graficos/static/css/main.f1188964.css.map",
-    "main.8a92c820.js.map": "/mv-graficos/static/js/main.8a92c820.js.map",
+    "main.1b69c941.js.map": "/mv-graficos/static/js/main.1b69c941.js.map",
     "787.a7455385.chunk.js.map": "/mv-graficos/static/js/787.a7455385.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1188964.css",
-    "static/js/main.8a92c820.js"
+    "static/js/main.1b69c941.js"
   ]
 }
