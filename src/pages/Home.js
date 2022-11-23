@@ -1,4 +1,3 @@
-import "../styles/Home.css";
 import imgHome from "../assets/home/imgHome.jpg";
 import { Carousel } from "../components/Carousel";
 import trespatitos from "../assets/clients/trespatitos.png";
@@ -9,6 +8,7 @@ import burgerking from "../assets/clients/burgerking.png";
 import quickfood from "../assets/clients/quickfood.png";
 import celusal from "../assets/clients/celusal.png";
 import CallToAction from "../components/CallToAction";
+
 function Home() {
   return (
     <main className="df wp rw jcc aic home">

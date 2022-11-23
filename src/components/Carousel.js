@@ -55,7 +55,7 @@ const Carousel = ({
 const Contenedor = styled.section`
   position: relative;
   overflow: hidden;
-  margin-top: 4rem;
+  margin-top: 1rem;
 `;
 const Galeria = styled.div`
   display: flex;

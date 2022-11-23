@@ -22,6 +22,7 @@ const Container = styled.section`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 3rem;
   @media screen and (max-width: 1280px) {
 
   }
@@ -37,6 +38,11 @@ const Cover = styled.figure`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  @media screen and (max-width: 1200px) {
+    img {
+      margin-top: 1rem;
+    }
   }
 `;
 const Action = styled.article`
@@ -112,7 +118,7 @@ const Action = styled.article`
       color: #131E29;
     }
   }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
     display: flex;
     align-self: flex-end;
@@ -125,6 +131,11 @@ const Action = styled.article`
       left: 0;
       bottom: 0;
       transition: all 0.3s;
+    }
+    h2,
+    h3,
+    p {
+      color: #131E29;
     }
   }
 `;

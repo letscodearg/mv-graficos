@@ -1,4 +1,3 @@
-import '../styles/Products.css';
 import { Carousel } from "../components/Carousel";
 import trespatitos from "../assets/products/trespatitos.png";
 import billiken from "../assets/products/billiken.png";
@@ -17,7 +16,7 @@ import nucha from "../assets/products/nucha.png";
 
 function Products() {
   return (
-    <main className="df wp rw jcc aic"> 
+    <main className="df wp rw jcc aic products"> 
       <section className="main d-df d-rw d-wp d-jcb d-ais">
         <h1>Líneas de Productos</h1>
         <article className="article">
@@ -43,9 +42,9 @@ function Products() {
         ]}
         velocity={1000}
         interval={5000}
-        height={"12rem"}
-        mbWidth={"1000%"}
-        dkWidth={"350%"}
+        height={"8rem"}
+        mbWidth={"650%"}
+        dkWidth={"200%"}
       />
     </main>
   );
