@@ -13,35 +13,46 @@ import madaus from "../assets/products/madaus.png";
 import mccain from "../assets/products/mccain.png";
 import nucha from "../assets/products/nucha.png";
 
-
 function Products() {
   return (
-    <main className="df wp rw jcc aic products"> 
+    <main className="df wp rw jcc aic products">
       <section className="main d-df d-rw d-wp d-jcb d-ais">
         <h1>Líneas de Productos</h1>
         <article className="article">
-            <p>Todos los productos se realizan con un alto estándar de calidad y con una alta capacidad de respuesta ante las necesidades de nuestros clientes.</p>
-            <p>Realizamos estuches en cartulina Duplex o Triplex en cualquier gramaje y formato, tanto de fondo automático, fondo americano o pegado lateral.</p>
-            <p>También realizamos estuches de mayor tamaño realizados en microcorrugado.</p>
+          <p>
+            Todos los productos se realizan con un alto estándar de calidad y
+            con una alta capacidad de respuesta ante las necesidades de nuestros
+            clientes.
+          </p>
+          <p>
+            Realizamos estuches en cartulina Duplex o Triplex en cualquier
+            gramaje y formato, tanto de fondo automático, fondo americano o
+            pegado lateral.
+          </p>
+          <p>
+            También realizamos estuches de mayor tamaño realizados en
+            microcorrugado.
+          </p>
         </article>
       </section>
       <Carousel
-        slides={[trespatitos, 
-          billiken, 
-          elnoble, 
-          celusal, 
-          paty, 
-          quaker, 
-          kentucky, 
-          fritzzio, 
+        slides={[
+          trespatitos,
+          billiken,
+          elnoble,
+          celusal,
+          paty,
+          quaker,
+          kentucky,
+          fritzzio,
           pizzazen,
           santamaria,
           madaus,
           mccain,
-          nucha
+          nucha,
         ]}
         velocity={1000}
-        interval={5000}
+        interval={2000}
         height={"8rem"}
         mbWidth={"650%"}
         dkWidth={"200%"}
