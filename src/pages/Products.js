@@ -26,12 +26,13 @@ function Products() {
           </p>
           <p>
             Realizamos estuches en cartulina Duplex o Triplex en cualquier
-            gramaje y formato, tanto de fondo automático, fondo americano o
-            pegado lateral.
+            gramaje y formato, y en microcorrugado, tanto de fondo automático,
+            fondo americano, pegado lateral y pegado de 4 ángulos.
           </p>
           <p>
-            También realizamos estuches de mayor tamaño realizados en
-            microcorrugado.
+            Contamos con la posibilidad de dar cualquier proceso adicional que
+            el cliente solicite para darle una mejor terminación a los estuches,
+            ya sea Barniz, Laca UV, laminado en polipropileno o Stamping.
           </p>
         </article>
       </section>

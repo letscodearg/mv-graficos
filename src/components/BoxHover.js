@@ -13,7 +13,7 @@ const BoxHover = ({ src, text }) => {
 };
 
 const Box = styled.section`
-  width: 80%;
+  width: 60%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ const Box = styled.section`
   }
 
   @media screen and (min-width: 1200px) {
-    width: 25%;
+    width: 30%;
     cursor: pointer;
     margin: 1rem;
     &::before {

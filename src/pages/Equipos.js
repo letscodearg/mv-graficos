@@ -40,11 +40,6 @@ function Equipos() {
               text="Pegadoras automáticas para estuches de fondo armado, pegado lateral y 4 o 6 ángulos."
               altText="Pegadoras automáticas para estuches de fondo armado, pegado lateral y 4 o 6 ángulos."
             />
-            <BoxHover
-              src={pegadora}
-              text="Horno para aplicación de Laca UV"
-              altText="texto para cuadro"
-            />
           </article>
         </section>
       </section>
