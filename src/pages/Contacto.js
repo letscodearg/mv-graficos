@@ -12,7 +12,6 @@ function Contacto() {
     email: "",
     msg: "",
   });
-  const [validation, setValidation] = useState(false);
 
   const changeValues = (event) =>
     setValues((values) => ({
@@ -24,47 +23,31 @@ function Contacto() {
     e.preventDefault();
     try {
       // Recorremos cada una de los values
-      for (const key in values) {
-        if (Object.hasOwnProperty.call(values, key)) {
-          const value = values[key];
-          if (value.length > 0) {
-            setValidation(true);
-          } else {
-            setValidation(false);
-          }
-        }
-      }
+      console.clear();
       // Si paso todas las validaciones
-      if (validation === true) {
-        let req = await axios({
-          method: "post",
-          url: "http://localhost/mv-graficos/src/php/contacto.php",
-          headers: { "content-type": "application/json" },
-          data: values,
+      let req = await axios({
+        method: "post",
+        url: "http://mv-graficos.com.ar/php/contacto.php",
+        headers: { "content-type": "application/json" },
+        data: values,
+      });
+      let res = await req.data;
+      if (res.response) {
+        Swal.fire({
+          titleText: "Gracias!",
+          text: "Te responderemos a la brevedad",
+          icon: "success",
         });
-        let res = await req.data;
-        if (res.response) {
-          Swal.fire({
-            titleText: "Gracias!",
-            text: "Te responderemos a la brevedad",
-            icon: "success",
-          });
-          return redirect("/");
-        } else {
-          Swal.fire({
-            titleText: "Error!",
-            text: "No pudimos enviar el correo",
-            icon: "error",
-          });
-        }
+        return redirect("/");
       } else {
         Swal.fire({
           titleText: "Error!",
-          text: "Por favor completa todos los campos",
+          text: "No pudimos enviar el correo",
           icon: "error",
         });
       }
     } catch (error) {
+      console.clear();
       console.log(new Error(error));
     }
   };
