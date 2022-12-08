@@ -1,22 +1,10 @@
 <?php
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Headers: Content-Type');
-$rest_json = file_get_contents("php://input");
-$_POST = json_decode($rest_json, true);
-header('Content-Type: application/json; charset=utf-8');
-http_response_code(200);
-echo json_encode(array("response" => false));
-die();
-// Checkamos que hay data
-if(empty($_POST['name']) && empty($_POST['phone']) && empty($_POST['email']) && empty($_POST['msg'])){
-	echo json_encode(
-        [
-            "response" => false
-        ]
-    ); 
-    exit();
-}
-
+    header('Access-Control-Allow-Origin: *');
+    header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+    header("Access-Control-Allow-Headers: Content-Disposition, Content-Type, Content-Length, Accept-Encoding");
+    header("Content-type:application/json");
+	$data = json_decode(file_get_contents('php://input'),true);
+	$_POST = $data;
 if($_POST){
 	$nombre = $_POST['name'];
 	$telefono = $_POST['phone'];
@@ -40,11 +28,12 @@ if($_POST){
 	if($ok) {
 		http_response_code(200);
 		echo json_encode(array(
-			"response" => true
+			"send" => true
 		));
 	}
 	else{
-		echo json_encode(["response" => false]);
+		http_response_code(200);
+		echo json_encode(array("send" => false));
 	}
 }
 

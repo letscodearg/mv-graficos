@@ -1,97 +1,137 @@
 import "../styles/Contacto.css";
 import { redirect } from "react-router-dom";
 import Iframe from "react-iframe";
-import { useState } from "react";
 import axios from "axios";
-import Swal from "sweetalert2";
+import { Formik } from "formik";
+//import Swal from "sweetalert2";
 
 function Contacto() {
-  const [values, setValues] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    msg: "",
-  });
-
-  const changeValues = (event) =>
-    setValues((values) => ({
-      ...values,
-      [event.target.name]: event.target.value,
-    }));
-
-  const sendForm = async (e) => {
-    e.preventDefault();
-    try {
-      // Recorremos cada una de los values
-      console.clear();
-      // Si paso todas las validaciones
-      let req = await axios({
-        method: "post",
-        url: "http://mv-graficos.com.ar/php/contacto.php",
-        headers: { "content-type": "application/json" },
-        data: values,
-      });
-      let res = await req.data;
-      if (res.response) {
-        Swal.fire({
-          titleText: "Gracias!",
-          text: "Te responderemos a la brevedad",
-          icon: "success",
-        });
-        return redirect("/");
-      } else {
-        Swal.fire({
-          titleText: "Error!",
-          text: "No pudimos enviar el correo",
-          icon: "error",
-        });
-      }
-    } catch (error) {
-      console.clear();
-      console.log(new Error(error));
+  let fields = {};
+  fields.email = "";
+  fields.name = "";
+  fields.phone = "";
+  fields.msg = "";
+  const validation = (values) => {
+    let errors = {};
+    let emailRegx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    let numberRegx = /^([^0-9]*)$/;
+    if (!values.email) {
+      errors.email = "El email es obligario";
+    } else if (!emailRegx.test(values.email)) {
+      errors.email = "El email no tiene formato valido";
     }
+
+    if (!values.name) {
+      errors.name = "El nombre es obligatorio";
+    } else if (!numberRegx.test(values.name)) {
+      errors.name = "El nombre no puede contener numeros";
+    } else if (values.name.length < 2) {
+      errors.name = "El nombre debe tener al menos 2 caracteres";
+    }
+
+    if (!values.phone) {
+      errors.phone = "El telefono es obligatorio";
+    } else if (numberRegx.test(values.phone)) {
+      errors.phone = "El telefono no puede contener letras";
+    } else if (values.phone.length < 8) {
+      errors.phone = "El telefono debe tener al menos 8 caracteres";
+    }
+
+    if (!values.msg) {
+      errors.msg = "Debes dejar un mensaje";
+    } else if (values.msg.length < 8) {
+      errors.msg = "El mensaje debe tener al menos 8 caracteres";
+    }
+    return errors;
+  };
+  const submit = async (values, { setSubmitting }) => {
+    let data = JSON.stringify(values, null, 2);
+    let endpoint = `${process.env.PUBLIC_URL}/contact.php`;
+    let res = await axios.post(endpoint, data, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    let [send] = res.data;
+    if (send) {
+      return redirect("/");
+    }
+    setSubmitting(false);
   };
 
   return (
     <main className="df cl jcc aic contacto">
       <section className="main d-df d-rw d-wp d-jcb d-ais">
         <h1>Contacto</h1>
-        <form className="df cl jcc aic" onSubmit={sendForm}>
-          <fieldset className="df jcb">
-            <label htmlFor="name">Nombre</label>
-            <input
-              type="text"
-              name="name"
-              value={values.name}
-              onChange={changeValues}
-            />
-          </fieldset>
-          <fieldset className="df jcb">
-            <label htmlFor="phone">Teléfono</label>
-            <input
-              type="phone"
-              name="phone"
-              value={values.phone}
-              onChange={changeValues}
-            />
-          </fieldset>
-          <fieldset className="df jcb">
-            <label htmlFor="email">E-Mail</label>
-            <input
-              type="email"
-              name="email"
-              value={values.email}
-              onChange={changeValues}
-            />
-          </fieldset>
-          <fieldset className="df jcb">
-            <label htmlFor="msg">Mensaje</label>
-            <textarea name="msg" value={values.msg} onChange={changeValues} />
-          </fieldset>
-          <button type="submit">
-            <i class="fa-solid fa-paper-plane"></i> Enviar
-          </button>
-        </form>
+        <Formik initialValues={fields} validate={validation} onSubmit={submit}>
+          {({
+            values,
+            errors,
+            touched,
+            handleChange,
+            handleBlur,
+            handleSubmit,
+            isSubmitting,
+            /* and other goodies */
+          }) => (
+            <form className="df cl jcc aic" onSubmit={handleSubmit}>
+              <fieldset className="df jcb wp">
+                <label htmlFor="name">Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.name}
+                />
+                {errors.name && touched.name && (
+                  <span className="error">{errors.name}</span>
+                )}
+              </fieldset>
+              <fieldset className="df jcb wp">
+                <label htmlFor="phone">Teléfono</label>
+                <input
+                  type="phone"
+                  name="phone"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.phone}
+                />
+                {errors.phone && touched.phone && (
+                  <span className="error">{errors.phone}</span>
+                )}
+              </fieldset>
+              <fieldset className="df jcb wp">
+                <label htmlFor="email">E-Mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.email}
+                />
+                {errors.email && touched.email && (
+                  <span className="error">{errors.email}</span>
+                )}
+              </fieldset>
+              <fieldset className="df jcb wp">
+                <label htmlFor="msg">Mensaje</label>
+                <textarea
+                  name="msg"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.msg}
+                />
+                {errors.msg && touched.msg && (
+                  <span className="error">{errors.msg}</span>
+                )}
+              </fieldset>
+              <button type="submit" disabled={isSubmitting}>
+                <i className="fa-solid fa-paper-plane"></i> Enviar
+              </button>
+            </form>
+          )}
+        </Formik>
       </section>
       <section className="df wp rw jcc aic d-aist">
         <article className="df wp rw jcc aic box">

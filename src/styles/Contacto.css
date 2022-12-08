@@ -3,35 +3,46 @@
     width: 100vw;
 }
 
-.contacto form label {
-    margin-right: 1rem;
-    width: 20%
-}
 
 .contacto form fieldset {
     border: none;
-    width: 80%
+    outline: none;
+    width: 100%;
+    align-items: center;
+    gap: 0.25rem;
+    padding: .25rem;
+}
+
+.contacto form fieldset label{
+    flex: 0 0 10%;
 }
 
 .contacto form input, main form textarea {
-    width: 80%
+    flex: 1 0 auto
+}
+
+.contacto form fieldset span.error{
+    flex: 0 0 100%;
+    padding: 0.5rem 0rem;
+    color: red;
 }
 
 .contacto form button {
-   border-radius: 2rem;
-   background-color: #E4002B;
-   color: snow;
-   padding: .8rem;
-   text-transform: uppercase;
-   font-weight: bold;
-   margin-bottom: 1rem;
-   font-family: 'Josefin Slab', serif;
-   border: none
+    border-radius: 2rem;
+    background-color: #E4002B;
+    color: snow;
+    padding: .8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Josefin Slab', serif;
+    border: none;
 }
 
 .contacto form fieldset input, .contacto form fieldset textarea {
     border: none;
-    border-bottom: solid red .2rem
+    border-bottom: solid red .2rem;
+    resize: none;
 }
 
 .contacto .boxes {
@@ -64,32 +75,25 @@ main iframe{
 
 @media screen and (min-width: 1200px) {
     .contacto form {
-        width: 60%;
-        margin-top: 1rem;
+        width: 50%;
+        margin-top: 3rem;
+        margin-right: 3rem;
     }
 
     .contacto section {
         width: 100%;
     }
 
-    .contacto form {
-        margin-top: 3rem;
-    }
-
-    .contacto form fieldset input, .contacto form fieldset textarea {
-        margin-bottom: 2rem;
-        outline: none;
-    }
 
     .contacto form button {
         transition: all 0.5s ease-in-out;
         cursor: pointer;
-     }
+    }
 
     .contacto form button:hover {
         background-color: #131E29;
         color: snow;
         transition: all 0.5s ease-in-out;
-     }
+    }
 
 }
