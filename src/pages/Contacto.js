@@ -1,5 +1,5 @@
 import "../styles/Contacto.css";
-import { redirect } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import Iframe from "react-iframe";
 import axios from "axios";
 import { Formik } from "formik";
@@ -54,7 +54,7 @@ function Contacto() {
     });
     let [send] = res.data;
     if (send) {
-      return redirect("/");
+      return <Navigate to="/" />;
     }
     setSubmitting(false);
   };
