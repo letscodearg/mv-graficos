@@ -21,11 +21,11 @@ if($_POST){
 	$mensaje .= "Consulta: " . $msg . " \r\n";
 	$mensaje .= "Enviado el " . date('d/m/Y', time());
 	
-	$para = 'info@mv-graficos.com.ar';
+	$para = 'delficasarino@gmail.com';
 	$asunto = 'Contacto - MV Gráficos';
 	
 	$ok = mail($para, $asunto, utf8_decode($mensaje), $header);
-	if($ok) {
+/* 	if($ok) {
 		http_response_code(200);
 		echo json_encode(array(
 			"send" => true
@@ -34,7 +34,7 @@ if($_POST){
 	else{
 		http_response_code(200);
 		echo json_encode(array("send" => false));
-	}
+	} */
 }
 
 

@@ -1,8 +1,8 @@
 import "../styles/Contacto.css";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Iframe from "react-iframe";
 import axios from "axios";
-import { Formik } from "formik";
+import { Formik, Form } from "formik";
 //import Swal from "sweetalert2";
 
 function Contacto() {
@@ -44,19 +44,18 @@ function Contacto() {
     }
     return errors;
   };
-  const submit = async (values, { setSubmitting }) => {
-    let data = JSON.stringify(values, null, 2);
-    let endpoint = `${process.env.PUBLIC_URL}/contact.php`;
-    let res = await axios.post(endpoint, data, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    let [send] = res.data;
-    if (send) {
-      return <Navigate to="/" />;
+  const navigate = useNavigate();
+  const submit = async (values, { setSubmitting, resetForm }) => {
+    try {
+      let endpoint = `${process.env.PUBLIC_URL}/contacto.php`;
+      await axios.post(endpoint, values);
+      navigate("/");
+      setSubmitting(false);
+      resetForm();
+    } catch (error) {
+      console.error(error);
+      setSubmitting(false);
     }
-    setSubmitting(false);
   };
 
   return (
@@ -102,7 +101,7 @@ function Contacto() {
                 )}
               </fieldset>
               <fieldset className="df jcb wp">
-                <label htmlFor="email">E-Mail</label>
+                <label htmlFor="email">Mail</label>
                 <input
                   type="email"
                   name="email"

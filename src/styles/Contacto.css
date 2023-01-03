@@ -1,99 +1,98 @@
 .contacto form {
-    font-weight: bold;
-    width: 100vw;
+  font-weight: bold;
+  width: 80vw;
 }
-
 
 .contacto form fieldset {
-    border: none;
-    outline: none;
-    width: 100%;
-    align-items: center;
-    gap: 0.25rem;
-    padding: .25rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem;
 }
 
-.contacto form fieldset label{
-    flex: 0 0 10%;
+.contacto form fieldset label {
+  flex: 0 0 10%;
 }
 
-.contacto form input, main form textarea {
-    flex: 1 0 auto
+.contacto form input,
+main form textarea {
+  flex: 1 0 auto;
 }
 
-.contacto form fieldset span.error{
-    flex: 0 0 100%;
-    padding: 0.5rem 0rem;
-    color: red;
+.contacto form fieldset span.error {
+  flex: 0 0 100%;
+  padding: 0.5rem 0rem;
+  color: red;
 }
 
 .contacto form button {
-    border-radius: 2rem;
-    background-color: #E4002B;
-    color: snow;
-    padding: .8rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    font-family: 'Josefin Slab', serif;
-    border: none;
+  border-radius: 2rem;
+  background-color: #e4002b;
+  color: snow;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "Josefin Slab", serif;
+  border: none;
 }
 
-.contacto form fieldset input, .contacto form fieldset textarea {
-    border: none;
-    border-bottom: solid red .2rem;
-    resize: none;
+.contacto form fieldset input,
+.contacto form fieldset textarea {
+  border: none;
+  border-bottom: solid red 0.2rem;
+  resize: none;
 }
 
 .contacto .boxes {
-    width: 100%
+  width: 100%;
 }
 
 .contacto .boxes .box.padding {
-    padding: 1rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .contacto .link {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .contacto a {
-    color: #131E29;
-    text-decoration: none;
-    margin-left: 1rem;
+  color: #131e29;
+  text-decoration: none;
+  margin-left: 1rem;
 }
 
 .fa-linkedin {
-    font-size: 2.5rem;
-    margin-top: 1rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
 }
 
-main iframe{
-    width: 100%;
-    border-radius: 1rem;
+main iframe {
+  width: 100%;
+  border-radius: 1rem;
 }
 
 @media screen and (min-width: 1200px) {
-    .contacto form {
-        width: 50%;
-        margin-top: 3rem;
-        margin-right: 3rem;
-    }
+  .contacto form {
+    width: 50%;
+    margin-top: 3rem;
+    margin-right: 3rem;
+  }
 
-    .contacto section {
-        width: 100%;
-    }
+  .contacto section {
+    width: 100%;
+  }
 
+  .contacto form button {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
 
-    .contacto form button {
-        transition: all 0.5s ease-in-out;
-        cursor: pointer;
-    }
-
-    .contacto form button:hover {
-        background-color: #131E29;
-        color: snow;
-        transition: all 0.5s ease-in-out;
-    }
-
+  .contacto form button:hover {
+    background-color: #131e29;
+    color: snow;
+    transition: all 0.5s ease-in-out;
+  }
 }
